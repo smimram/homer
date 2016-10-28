@@ -1,0 +1,47 @@
+order revdeglex2
+gen s
+gen t
+gen u
+gen st
+gen su
+gen tu
+gen stu
+gen D
+rule st (st)
+rule su (su)
+rule tu (tu)
+rule ts (st)
+rule ut (tu)
+rule us (su)
+rule s(tu) (stu)
+rule (tu)s (stu)
+rule t(su) (stu)
+rule (su)t (stu)
+rule u(st) (stu)
+rule (st)u (stu)
+rule (st)(stu) (stu)(st)
+rule (st)(su) (stu)s
+rule (st)(tu) (stu)t
+rule u(stu) (stu)u
+rule (su)(stu) (stu)(su)
+rule (su)(st) (stu)s
+rule (su)(tu) (stu)u
+rule t(stu) (stu)t
+rule (tu)(stu) (stu)(tu)
+rule (tu)(su) (stu)u
+rule (tu)(st) (stu)t
+rule s(stu) (stu)s
+rule u(su) (su)u
+rule u(tu) (tu)u
+rule t(st) (st)t
+rule t(tu) (tu)t
+rule s(su) (su)s
+rule s(st) (st)s
+rule D(stu) ""
+rule (stu)D ""
+rule (st)D D(st)
+rule uD Du
+rule (su)D D(su)
+rule tD Dt
+rule (tu)D D(tu)
+rule sD Ds

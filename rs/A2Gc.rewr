@@ -1,0 +1,18 @@
+order revdeglex2
+gen s
+gen t
+gen st
+gen ts
+gen sts
+rule st (st)
+rule ts (ts)
+rule s(ts) (sts)
+rule t(st) (sts)
+rule (st)s (sts)
+rule (ts)t (sts)
+rule (ts)(sts) (sts)(st)
+rule (ts)(ts) (sts)s
+rule (st)(sts) (sts)(ts)
+rule (st)(st) (sts)t
+rule t(sts) (sts)s
+rule s(sts) (sts)t

@@ -1,0 +1,6 @@
+order revdeglex
+gen s
+gen t
+rule ststst tststs
+rule ss ""
+rule tt ""

@@ -1,0 +1,31 @@
+order revdeglex2
+gen r
+gen s
+gen t
+gen r*s
+gen s*t
+gen r*st
+gen rs
+gen st
+gen rt
+gen r[s*t]
+gen [r*s]t
+gen s[r*st]
+gen rst
+rule rs (rs)
+rule st (st)
+rule rt (rt)
+rule r(s*t) (r[s*t])
+rule (r*s)t ([r*s]t)
+rule s(r*st) (s[r*st])
+rule s(r*s) (rs)
+rule (r*s)r (rs)
+rule (s*t)(r*st) (r[s*t])
+rule (r*st)r (r[s*t])
+rule t(s*t) (st)
+rule (s*t)s (st)
+rule t(r*st) ([r*s]t)
+rule (r*st)(r*s) ([r*s]t)
+rule tr (rt)
+rule (r*st)s (s[r*st])
+rule (rs)t (rst)

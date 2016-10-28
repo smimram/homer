@@ -1,0 +1,19 @@
+order deglex
+gen a1
+gen a2
+gen b1
+gen b2
+gen c
+gen d
+gen x1
+gen x2
+gen y1
+gen y2
+gen u
+gen v
+rule (b1)(y1) (a1)(x1)
+rule (b2)(y2) (a2)(x2)
+rule d(y1) c(x1)
+rule d(y2) c(x2)
+rule (b1)v (a1)u
+rule (b2)v (a2)u

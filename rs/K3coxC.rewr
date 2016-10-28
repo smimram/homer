@@ -1,0 +1,18 @@
+order deglex
+gen a
+gen b
+gen c
+rule aa a
+rule bb b
+rule cc c
+rule abab bab
+rule baba bab
+rule ca ac
+rule bcbc cbc
+rule cbcb cbc
+rule acbab cbab
+rule bcbac cbac
+rule abacbc bacbc
+rule cbacba cbacb
+rule abacbac bacbac
+rule acbacbc cbacbc

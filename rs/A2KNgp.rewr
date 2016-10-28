@@ -1,0 +1,14 @@
+order revweightlex
+gen s
+gen t
+gen st
+gen S
+gen T
+gen ST
+rule st (st)
+rule t(st) (st)s
+rule ST (ST)
+rule Ss ""
+rule sS ""
+rule Tt ""
+rule tT ""

@@ -1,0 +1,92 @@
+order deglex
+gen a
+gen b
+gen c
+gen d
+gen e
+gen f
+gen g
+rule aa ""
+rule bb ""
+rule cc ""
+rule dd ""
+rule ee ""
+rule ff ""
+rule gg ""
+rule dad ada
+rule cbc bcb
+rule dcd cdc
+rule ede ded
+rule fef efe
+rule gfg fgf
+rule ba ab
+rule ca ac
+rule ea ae
+rule fa af
+rule ga ag
+rule db bd
+rule eb be
+rule fb bf
+rule gb bg
+rule ec ce
+rule fc cf
+rule gc cg
+rule fd df
+rule gd dg
+rule ge eg
+rule dab bda
+rule dcbd cdcb
+rule edae deda
+rule edce dedc
+rule fedf efed
+rule gfeg fgfe
+rule dacda cdacd
+rule dacdc adacd
+rule dacbda cdacbd
+rule edace dedac
+rule edcbe dedcb
+rule fedaf efeda
+rule fedcf efedc
+rule gfedg fgfed
+rule edacbe dedacb
+rule dacbdcb adacbdc
+rule edacded dedacde
+rule fedacf efedac
+rule fedcbf efedcb
+rule gfedcg fgfedc
+rule gfedag fgfeda
+rule fedacbf efedacb
+rule fedacdf efedacd
+rule gfedacg fgfedac
+rule gfedcbg fgfedcb
+rule edacbded dedacbde
+rule fedacbdf efedacbd
+rule gfedacbg fgfedacb
+rule gfedacdg fgfedacd
+rule fedacdefe efedacdef
+rule edacbdcedc dedacbdced
+rule fedacbdcf efedacbdc
+rule gfedacbdg fgfedacbd
+rule gfedacdeg fgfedacde
+rule fedacbdefe efedacbdef
+rule edacbdcedac dedacbdceda
+rule gfedacbdcg fgfedacbdc
+rule gfedacbdeg fgfedacbde
+rule fedacbdcefe efedacbdcef
+rule gfedacdefgf fgfedacdefg
+rule gfedacbdceg fgfedacbdce
+rule gfedacbdefgf fgfedacbdefg
+rule fedacbdcedfed efedacbdcedfe
+rule gfedacbdcedg fgfedacbdced
+rule gfedacbdcefgf fgfedacbdcefg
+rule fedacbdcedafeda efedacbdcedafed
+rule gfedacbdcedag fgfedacbdceda
+rule gfedacbdcedfgf fgfedacbdcedfg
+rule gfedacbdcedafgf fgfedacbdcedafg
+rule gfedacbdcedfegfe fgfedacbdcedfegf
+rule gfedacbdcedafegfe fgfedacbdcedafegf
+rule gfedacbdcedafedgfed fgfedacbdcedafedgfe
+rule gfedacbdcedafedcgfedc fgfedacbdcedafedcgfed
+rule gfedacbdcedafedcbgfedcb fgfedacbdcedafedcbgfedc
+rule gfedacbdcedafedcgfedac fgfedacbdcedafedcgfeda
+rule gfedacbdcedafedcbgfedacb fgfedacbdcedafedcbgfedac

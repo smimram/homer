@@ -1,0 +1,111 @@
+order revweightlex
+gen a
+gen b
+gen ab
+gen ba
+gen aba
+gen A
+gen B
+gen Ab
+gen Ba
+gen Aba
+gen Bab
+gen Baba
+gen ABa
+gen BAb
+gen ABab
+gen BAba
+gen ABaba
+gen ABAb
+gen ABAba
+gen AB
+gen BA
+gen ABA
+rule ab (ab)
+rule ba (ba)
+rule a(ba) (aba)
+rule b(ab) (aba)
+rule (ab)a (aba)
+rule (ba)b (aba)
+rule (ba)(aba) (aba)(ab)
+rule (ba)(ba) (aba)a
+rule (ab)(aba) (aba)(ba)
+rule (ab)(ab) (aba)b
+rule b(aba) (aba)a
+rule a(aba) (aba)b
+rule Ab (Ab)
+rule Ba (Ba)
+rule AB (AB)
+rule BA (BA)
+rule A(ba) (Aba)
+rule B(ab) (Bab)
+rule B(aba) (Baba)
+rule A(Ba) (ABa)
+rule B(Ab) (BAb)
+rule (AB)(ab) (ABab)
+rule (BA)(ba) (BAba)
+rule (AB)(aba) (ABaba)
+rule (AB)(Ab) (ABAb)
+rule (AB)(Aba) (ABAba)
+rule (AB)A (ABA)
+rule (Ba)b (Bab)
+rule (BA)b (BAb)
+rule (Ab)a (Aba)
+rule (AB)a (ABa)
+rule A(BA) (ABA)
+rule B(AB) (ABA)
+rule (BA)B (ABA)
+rule (BA)(ABA) (ABA)(AB)
+rule (BA)(BAb) (ABA)(Ab)
+rule (BA)(Bab) (ABA)(ab)
+rule (BA)(BA) (ABA)A
+rule (BA)(Ba) (ABA)a
+rule B(ABa) (ABA)a
+rule B(ABA) (ABA)A
+rule B(ABAba) (ABA)(Aba)
+rule B(ABAb) (ABA)(Ab)
+rule B(ABab) (ABA)(ab)
+rule A(ABA) (ABA)B
+rule (ABa)(aba) (ABaba)b
+rule (ABa)(ba) (ABaba)
+rule (ABa)b (ABab)
+rule (Ab)(aba) (Aba)(ba)
+rule (Ab)(ab) (Aba)b
+rule (BAb)a (BAba)
+rule (AB)(ABA) (ABA)(BA)
+rule (AB)(ABa) (ABA)(Ba)
+rule (ABA)(ba) (ABAba)
+rule (AB)(AB) (ABA)B
+rule (ABA)b (ABAb)
+rule (ABAb)a (ABAba)
+rule (BAb)(aba) (BAba)(ba)
+rule (BAb)(ab) (BAba)b
+rule (ABab)(ab) (ABaba)b
+rule (ABab)(aba) (ABaba)(ba)
+rule (ABab)a (ABaba)
+rule B(Aba) (BAba)
+rule A(Bab) (ABab)
+rule (Bab)(ab) (Baba)b
+rule (Bab)(aba) (Baba)(ba)
+rule (Bab)a (Baba)
+rule A(aba) (Aba)b
+rule A(Baba) (ABaba)
+rule A(BAb) (ABAb)
+rule A(BAba) (ABAba)
+rule (BA)(aba) (BAba)b
+rule (Ba)(aba) (Baba)b
+rule (Ba)(ba) (Baba)
+rule (ABAb)(ab) (ABAba)b
+rule (ABAb)(aba) (ABAba)(ba)
+rule (ABA)(aba) (ABAba)b
+rule (AB)(ABAba) (ABA)(BAba)
+rule (AB)(ABAb) (ABA)(BAb)
+rule (AB)(ABaba) (ABA)(Baba)
+rule (AB)(ABab) (ABA)(Bab)
+rule A(ABAb) (ABA)Bb
+rule A(ABAba) (ABA)B(ba)
+rule (BA)(BAba) (ABA)(Aba)
+rule (BA)(ABAb) (ABA)(AB)b
+rule (BA)(ABAba) (ABA)(AB)(ba)
+rule (BA)(Baba) (ABAba)b
+rule B(ABaba) (ABAba)b

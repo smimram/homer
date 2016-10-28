@@ -1,0 +1,26 @@
+order lex
+
+gen a
+gen b
+gen c
+gen d
+gen e
+
+## alpha yx -> xy / choix a,b > c,d
+rule ca ac
+rule da ad
+rule cb bc
+rule db bd
+
+## gamma ce -> eac
+rule ce eac
+
+## delta de -> edb
+rule de edb
+
+## epsilon ccuae -> ccua
+rule aeaacc acc
+
+## complétion
+# ajoute les aev'aauvcc -> auvcc (v' = dual de v)
+# puis...

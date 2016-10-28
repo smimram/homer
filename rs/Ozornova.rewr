@@ -1,0 +1,47 @@
+order deglex
+gen a1
+gen a2
+gen b1
+gen b2
+gen b3
+gen b4
+gen b5
+gen b6
+gen c1
+gen c2
+gen c3
+gen c4
+gen c5
+gen c6
+gen d1
+gen d2
+gen e2
+gen e3
+gen f2
+gen f3
+gen g2
+gen g3
+gen h2
+gen h3
+gen i
+gen j
+gen k
+rule (a1)(b1) (a2)(b2)
+rule (b2)(c1) (b3)(c2)
+rule (c2)(d1) (c3)(d2)
+rule (b3)(c3) (b4)(c4)
+rule (a2)(b4) (a1)(b5)
+rule (b5)(c4) (b6)(c5)
+rule (c5)(d2) (c6)(d1)
+rule (b6)(c6) (b1)(c1)
+rule (a2)(b3) (e2)
+rule (a1)(b6) (e3)
+rule (e2)(c2) (f2)(g2)
+rule (e3)(c5) (f3)(g3)
+rule (e2)(c3) (f3)(g3)
+rule (e3)(c6) (f2)(g2)
+rule (g2)(d1) (h2)i
+rule (g3)(d2) (h3)i
+rule (f2)(h2) jk
+rule (f3)(h3) jk
+revhomogenise

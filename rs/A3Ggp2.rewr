@@ -1,0 +1,418 @@
+order revdeglex2
+gen s
+gen t
+gen u
+gen st
+gen ts
+gen sts
+gen tu
+gen ut
+gen utu
+gen su
+gen stu
+gen tsu
+gen sut
+gen uts
+gen stsu
+gen tsut
+gen stut
+gen suts
+gen tuts
+gen stsut
+gen stuts
+gen tsuts
+gen stsuts
+gen STUSTS
+gen STUST
+gen STUTS
+gen TUSTS
+gen STUT
+gen STUS
+gen TUTS
+gen TUST
+gen USTS
+gen STU
+gen TUS
+gen UST
+gen UTS
+gen US
+gen UTU
+gen TU
+gen UT
+gen STS
+gen ST
+gen TS
+gen U
+gen T
+gen S
+
+rule st (st)
+rule ts (ts)
+rule tu (tu)
+rule ut (ut)
+rule su (su)
+rule us (su)
+rule (st)s (sts)
+rule (st)u (stu)
+rule (ts)u (tsu)
+rule s(ut) (sut)
+rule u(ts) (uts)
+rule (st)(su) (stsu)
+rule (ts)(ut) (tsut)
+rule (st)(ut) (stut)
+rule (su)(ts) (suts)
+rule (tu)(ts) (tuts)
+rule (sts)(ut) (stsut)
+rule (stu)(ts) (stuts)
+rule (tsu)(ts) (tsuts)
+rule (stsu)(ts) (stsuts)
+rule t(st) (sts)
+rule (tu)t (utu)
+rule u(tu) (utu)
+rule u(utu) (utu)t
+rule u(tuts) (utu)(ts)
+rule (tu)(tu) (utu)u
+rule (utu)s (tuts)
+rule t(stut) (stsut)
+rule t(sts) (sts)s
+rule (stsu)(tsut) (stsuts)(ut)
+rule (stsu)(tsu) (stsuts)u
+rule (stu)(tsut) (stuts)(ut)
+rule (stu)(tsu) (stuts)u
+rule (tu)(tsut) (tuts)(ut)
+rule (tu)(tsu) (tuts)u
+rule (st)(suts) (stsuts)
+rule (ts)(uts) (tsuts)
+rule (ts)(su) (tsu)s
+rule (tsu)t (tsut)
+rule (st)(uts) (stuts)
+rule (stu)s (stsu)
+rule (stu)t (stut)
+rule (st)(sut) (stsut)
+rule (sts)u (stsu)
+rule (st)(st) (sts)t
+rule u(sut) (su)(ut)
+rule u(su) (su)u
+rule s(uts) (suts)
+rule s(su) (su)s
+rule (su)t (sut)
+rule (ut)u (utu)
+rule (ut)s (uts)
+rule t(utu) (utu)u
+rule t(uts) (tuts)
+rule t(ut) (utu)
+rule t(sut) (tsut)
+rule (tu)s (tsu)
+rule (ts)t (sts)
+rule s(sts) (sts)t
+rule s(tu) (stu)
+rule s(ts) (sts)
+rule t(stu) (stsu)
+rule u(st) (sut)
+rule t(su) (tsu)
+rule t(suts) (tsuts)
+rule (stsu)t (stsut)
+rule (sts)(su) (stsu)s
+rule t(stuts) (stsuts)
+rule s(tsut) (stsut)
+rule s(tsu) (stsu)
+rule (su)(tu) (stut)
+rule s(tuts) (stuts)
+rule s(stsu) (sts)(tu)
+rule (ts)(tsu) (stsu)s
+rule (ts)(stsu) (sts)(stu)
+rule (tsu)(tu) (stsut)
+rule (sts)(utu) (stsut)u
+rule (ts)(sts) (sts)(st)
+rule (ts)(tu) (stsu)
+rule (ts)(ts) (sts)s
+rule (utu)(st) (tsuts)
+rule (tu)(stu) (stsut)
+rule (tsu)(sts) (tsuts)t
+rule (tu)(suts) (tsu)(uts)
+rule (tu)(sut) (tsu)(ut)
+rule (tu)(su) (tsu)u
+rule (tu)(st) (tsut)
+rule (uts)(ut) (tsuts)
+rule (ut)(tsuts) (utu)(tsut)
+rule (ut)(utu) (utu)(tu)
+rule (ut)(uts) (utu)(ts)
+rule (uts)u (tuts)
+rule (ut)(ut) (utu)t
+rule (sut)u (stut)
+rule (uts)t (suts)
+rule s(sut) (su)(st)
+rule (suts)u (stuts)
+rule u(suts) (su)(uts)
+rule (st)(stsut) (sts)(tsut)
+rule (st)(stut) (stsut)u
+rule (st)(stsu) (sts)(tsu)
+rule (st)(stu) (sts)(tu)
+rule (st)(sts) (sts)(ts)
+rule (sts)(sut) (stsu)(st)
+rule (sts)(tuts) (stsuts)u
+rule (sts)(tsuts) (stsuts)(ut)
+rule (stsu)(tuts) (stsut)(uts)
+rule (stsu)(utu) (stsut)(ut)
+rule (stsu)(tu) (stsut)u
+rule (sts)(uts) (stsuts)
+rule (stut)(su) (stuts)u
+rule (stut)(sut) (stuts)(ut)
+rule (stu)(utu) (stut)(ut)
+rule (stu)(tuts) (stut)(uts)
+rule (stu)(tu) (stut)u
+rule (stut)s (stuts)
+rule (stut)(st) (stsuts)
+rule (stu)(stu) (stsut)u
+rule (stsut)(st) (stsuts)t
+rule (stu)(suts) (stsu)(uts)
+rule (stu)(stut) (stsut)(ut)
+rule (stu)(sut) (stsu)(ut)
+rule (stu)(su) (stsu)u
+rule (stu)(st) (stsut)
+rule (st)(tuts) (stuts)u
+rule (tsut)(sts) (tsuts)(ts)
+rule (tsut)(st) (tsuts)t
+rule (tsut)u (stsut)
+rule (tsut)s (tsuts)
+rule (ts)(sut) (tsu)(st)
+rule (ts)(suts) (tsuts)t
+rule (tsuts)u (stsuts)
+rule (tu)(tsuts) (tuts)(uts)
+rule (stu)(tsuts) (stuts)(uts)
+rule (stsu)(stsuts) (stsuts)(tuts)
+rule (stsu)(tsuts) (stsuts)(uts)
+rule t(stsut) (stsu)(st)
+rule (utu)(suts) (tuts)(uts)
+rule (utu)(sut) (tuts)(ut)
+rule (utu)(su) (tuts)u
+rule (tuts)t (tsuts)
+rule (tu)(utu) (utu)(ut)
+rule (tu)(tuts) (utu)(uts)
+rule (stuts)t (stsuts)
+rule (stsut)s (stsuts)
+rule (sut)(st) (suts)t
+rule (tu)(sts) (tsuts)
+rule t(stsu) (stsu)s
+rule (tsu)(tsu) (stsuts)
+rule (su)(tsu) (stuts)
+rule u(tsut) (tsuts)
+rule u(tsu) (tuts)
+rule (ts)(utu) (stsut)
+rule (st)(utu) (stut)u
+rule s(utu) (stut)
+rule u(sts) (suts)
+rule u(stsu) (stuts)
+rule u(stu) (stut)
+rule (ut)(st) (suts)
+rule s(tsuts) (stsuts)
+rule s(stsut) (stsut)u
+rule (ts)(tsut) (stsu)(st)
+rule (ts)(tuts) (stsuts)
+rule t(tuts) (tuts)u
+rule (ut)(stu) (stuts)
+rule (ut)(sut) (tsuts)
+rule (ut)(su) (tuts)
+rule (sut)s (suts)
+rule (sut)(su) (stuts)
+rule (uts)(tu) (stuts)
+rule (su)(sts) (suts)t
+rule s(suts) (suts)t
+rule (st)(stuts) (stsuts)u
+rule (st)(stsuts) (stsuts)(ut)
+rule (stsu)(sts) (stsuts)t
+rule (stu)(sts) (stsuts)
+rule (tsut)(su) (stsuts)
+rule (uts)(su) (tuts)s
+rule (sut)(sts) (suts)(ts)
+rule (stut)(sts) (stsuts)s
+rule (stut)(stsuts) (stsuts)(suts)
+rule (stut)(stsu) (stsuts)(su)
+rule (stut)(stsut) (stsuts)(sut)
+rule (sut)(stsu) (suts)(tsu)
+rule (sut)(stsut) (suts)(tsut)
+rule (uts)(stut) (tuts)(stu)
+rule (uts)(sut) (tuts)(st)
+rule (tsuts)(tuts) (stsuts)(tsu)
+rule (tsuts)(stuts) (stsuts)(stsu)
+rule (tsuts)(utu) (stsuts)(tu)
+rule (tsuts)(ut) (stsuts)t
+rule (tsut)(suts) (stsuts)(ts)
+rule (stuts)(tuts) (stsuts)(uts)
+rule (stut)(stu) (stsuts)u
+rule (stut)(stut) (stsuts)(ut)
+rule (stsu)(stsu) (stsuts)(tu)
+rule (stsu)(stsut) (stsuts)(utu)
+rule (sut)(stu) (suts)(tu)
+rule (uts)(tsut) (stuts)(st)
+rule (uts)(stsut) (stuts)(stu)
+rule (uts)(tsu) (stuts)s
+rule (suts)(ut) (stsuts)
+rule (suts)(sut) (stuts)(st)
+rule (suts)(su) (stuts)s
+rule (tuts)(utu) (stsuts)t
+rule (tuts)(stsu) (tsuts)(stu)
+rule (tuts)(tu) (stsuts)
+rule (tuts)(ts) (tsuts)s
+rule (tuts)(sts) (tsuts)(st)
+rule (ut)(stsut) (stuts)(st)
+rule (ut)(stsu) (stuts)s
+rule t(tsuts) (tuts)(ut)
+rule (tsuts)(uts) (stsuts)(ts)
+rule (ts)(tsuts) (stsuts)t
+rule (ts)(stsuts) (stsuts)(tu)
+rule (sts)(stut) (stsu)(stu)
+rule (stuts)(tu) (stsuts)u
+rule (uts)(stsu) (suts)(stu)
+rule (suts)(stut) (stuts)(stu)
+rule (uts)(sts) (suts)(st)
+rule (uts)(ts) (suts)s
+rule (tsuts)(su) (stsuts)s
+rule (stuts)(tsuts) (stsuts)(suts)
+rule (stuts)(utu) (stsuts)(ut)
+rule (stut)(suts) (stuts)(uts)
+rule (sut)(utu) (stut)(tu)
+rule (stuts)(tsut) (stsuts)(sut)
+rule (stuts)(tsu) (stsuts)(su)
+rule (sut)(ut) (stut)t
+rule (sut)(tuts) (stut)(tsu)
+rule (sut)(tsuts) (stut)(tsut)
+rule (sut)(uts) (stut)(ts)
+rule (st)(tsuts) (stuts)(ut)
+rule (stsut)(stut) (stsuts)(utu)
+rule (stsut)(suts) (stsuts)(uts)
+rule (stsut)(stu) (stsuts)(tu)
+rule (stsut)(sts) (stsuts)(ts)
+rule (tsuts)(stsuts) (stsuts)(stsut)
+rule (tsuts)(suts) (stsuts)(sts)
+rule (tsuts)(tsuts) (stsuts)(tsut)
+rule (sts)(stuts) (stsuts)(tu)
+rule (sts)(stsuts) (stsuts)(utu)
+rule (sts)(suts) (stsuts)t
+rule (stsut)(stsuts) (stsuts)(tsuts)
+rule (stsut)(stuts) (stsuts)(tuts)
+rule (stsut)(stsu) (stsuts)(tsu)
+rule (stsut)(stsut) (stsuts)(tsut)
+rule (tsuts)(stut) (stsuts)(stu)
+rule (tsuts)(sut) (stsuts)(st)
+rule (tuts)(stsuts) (stsuts)(stsu)
+rule (utu)(stuts) (stsuts)(ts)
+rule (tsut)(stu) (tsuts)(tu)
+rule (ts)(stut) (tsu)(stu)
+rule (tsut)(stsu) (tsuts)(tsu)
+rule (tsut)(stsut) (tsuts)(tsut)
+rule (tsut)(tuts) (stsut)(tsu)
+rule (tsut)(tsuts) (stsut)(tsut)
+rule (tsut)(utu) (stsut)(tu)
+rule (tsut)(uts) (stsut)(ts)
+rule (tsut)(ut) (stsut)t
+rule (stu)(stuts) (stsut)(uts)
+rule (stut)(stuts) (stsuts)(uts)
+rule s(stut) (su)(stu)
+rule (ut)(tuts) (utu)(tsu)
+rule (tsu)(tsut) (stsuts)t
+rule (su)(tsut) (stsuts)
+rule u(stuts) (stut)(ts)
+rule u(stut) (stut)t
+rule (ts)(stsut) (stsu)(stu)
+rule (ut)(sts) (suts)s
+rule (su)(stsu) (suts)(tu)
+rule (uts)(utu) (stsuts)
+rule (su)(utu) (stut)t
+rule (su)(tuts) (stut)(ts)
+rule (stu)(stsu) (stsuts)u
+rule (stu)(stsut) (stsuts)(ut)
+rule (tsu)(stsu) (tsuts)(tu)
+rule (tsut)(sut) (stsuts)t
+rule (tsu)(utu) (stsut)t
+rule (tsu)(tuts) (stsut)(ts)
+rule (ts)(stuts) (tsuts)(tu)
+rule (sut)(suts) (stsuts)s
+rule (su)(stsuts) (stsuts)(su)
+rule (su)(tsuts) (stsuts)s
+rule (tu)(stsuts) (stsuts)(ts)
+rule (stu)(stsuts) (stsuts)(uts)
+rule (tsu)(stsuts) (stsuts)(tsu)
+rule (tsu)(tsuts) (stsuts)(ts)
+rule t(stsuts) (stsuts)t
+rule (utu)(sts) (tsuts)s
+rule (utu)(stu) (stsuts)
+rule (utu)(stut) (stsuts)t
+rule (tu)(stsu) (stsuts)
+rule (tu)(stsut) (stsuts)t
+rule u(stsut) (stsuts)
+rule u(stsuts) (stsuts)s
+rule (tu)(stut) (stsut)t
+rule (ut)(suts) (tsuts)s
+rule (ut)(stut) (stsuts)
+rule (uts)(uts) (tsuts)s
+rule (sut)(sut) (stsuts)
+rule u(tsuts) (tsuts)s
+rule s(stuts) (suts)(tu)
+rule (sut)(stut) (stsuts)u
+rule (tsut)(stut) (stsuts)(tu)
+rule (uts)(tsuts) (stsuts)(st)
+rule (su)(stsut) (stsuts)u
+rule (tsu)(stsut) (stsuts)(tu)
+rule (uts)(stsuts) (stsuts)(stu)
+rule (tsut)(stsuts) (stsuts)(tsut)
+rule (tsut)(stuts) (stsuts)(tsu)
+rule (sut)(stsuts) (stsuts)(sut)
+rule (sut)(stuts) (stsuts)(su)
+rule s(stsuts) (stsuts)u
+rule (uts)(stuts) (tsuts)(stu)
+rule (uts)(suts) (tsuts)(st)
+rule (utu)(stsu) (stsuts)s
+rule (tuts)(tsut) (stsuts)(st)
+rule (suts)(utu) (stsuts)u
+rule (uts)(tuts) (stsuts)s
+rule (utu)(stsuts) (stsuts)(sts)
+rule (suts)(tsuts) (stsuts)(sut)
+rule (suts)(uts) (stsuts)s
+rule (utu)(stsut) (stsuts)(st)
+rule (suts)(stsuts) (stsuts)(stut)
+rule (suts)(suts) (stsuts)(st)
+rule (suts)(tuts) (stsuts)(su)
+rule (suts)(stuts) (stsuts)(stu)
+rule (tuts)(tsu) (stsuts)s
+rule (tuts)(tsuts) (stsuts)(sts)
+rule (ut)(stuts) (stsuts)s
+rule (tuts)(tuts) (stsuts)(ts)
+rule (tuts)(stsut) (stsuts)(stu)
+rule (stuts)(sts) (stsuts)(st)
+rule (stuts)(ts) (stsuts)s
+rule (ut)(stsuts) (stsuts)(st)
+rule (stuts)(stsuts) (stsuts)(stuts)
+rule (tu)(stuts) (stsut)(ts)
+rule (stsut)(su) (stsuts)u
+rule (stsut)(sut) (stsuts)(ut)
+rule (stuts)(stsut) (stsuts)(stut)
+rule (stuts)(stsu) (stsuts)(stu)
+
+rule STUSTS (STUSTS)
+rule STUST (STUST)
+rule STUTS (STUTS)
+rule TUSTS (TUSTS)
+rule STUT (STUT)
+rule STUS (STUS)
+rule TUTS (TUTS)
+rule TUST (TUST)
+rule USTS (USTS)
+rule STU (STU)
+rule TUS (TUS)
+rule UST (UST)
+rule UTS (UTS)
+rule US (US)
+rule UTU (UTU)
+rule TU (TU)
+rule UT (UT)
+rule STS (STS)
+rule ST (ST)
+rule TS (TS)
+
+rule Uu ""
+rule uU ""
+rule Tt ""
+rule tT ""
+rule Ss ""
+rule sS ""

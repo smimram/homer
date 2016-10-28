@@ -1,0 +1,6 @@
+gen r
+gen s
+gen t
+rule srsr rsrs
+rule tsts stst
+rule tr rt

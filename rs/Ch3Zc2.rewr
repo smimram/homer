@@ -1,0 +1,30 @@
+order deglex
+gen a
+gen b
+gen c
+gen bb
+gen ba
+gen cb
+gen ca
+rule ba (ba)
+rule cb (cb)
+rule ca (ca)
+rule c(ba) b(ca)
+rule (ca)b b(ca)
+rule (ba)b b(ba)
+rule (ba)a a(ba)
+rule (ca)c c(ca)
+rule (ca)a a(ca)
+rule (cb)c c(cb)
+rule (cb)b b(cb)
+rule (cb)a b(ca)
+rule (ca)(ba) (ba)(ca)
+rule (ca)(cb) (cb)(ca)
+rule bb (bb)
+rule (cb)(ba) (bb)(ca)
+rule (bb)b b(bb)
+rule (bb)a b(ba)
+rule c(bb) b(cb)
+rule (ca)(bb) (bb)(ca)
+rule (ba)(bb) (bb)(ba)
+rule (cb)(bb) (bb)(cb)

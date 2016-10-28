@@ -1,0 +1,119 @@
+order revdeglex2
+
+gen a
+gen b
+gen bb
+gen ba
+gen c
+gen cc
+gen cb
+gen ca
+gen d
+gen dd
+gen dc
+gen db
+gen da
+gen e
+gen ee
+gen ed
+gen ec
+gen eb
+gen ea
+gen f
+gen fe
+gen fd
+gen fc
+gen fb
+gen fa
+
+rule bba bab
+rule baa aba
+rule cca cac
+rule caa aca
+rule dda dad
+rule daa ada
+rule eea eae
+rule eaa aea
+rule ffa faf
+rule faa afa
+rule ccb cbc
+rule cbb bcb
+rule ddb dbd
+rule dbb bdb
+rule eeb ebe
+rule ebb beb
+rule ffb fbf
+rule fbb bfb
+rule ddc dcd
+rule dcc cdc
+rule eec ece
+rule ecc cec
+rule ffc fcf
+rule fcc cfc
+rule eed ede
+rule edd ded
+rule ffd fdf
+rule fdd dfd
+rule ffe fef
+rule fee efe
+rule cba bca
+rule cab bca
+rule dba bda
+rule dab bda
+rule eba bea
+rule eab bea
+rule fba bfa
+rule fab bfa
+rule dca cda
+rule dac cda
+rule eca cea
+rule eac cea
+rule fca cfa
+rule fac cfa
+rule eda dea
+rule ead dea
+rule fda dfa
+rule fad dfa
+rule fea efa
+rule fae efa
+rule dcb cdb
+rule dbc cdb
+rule ecb ceb
+rule ebc ceb
+rule fcb cfb
+rule fbc cfb
+rule edb deb
+rule ebd deb
+rule fdb dfb
+rule fbd dfb
+rule feb efb
+rule fbe efb
+rule edc dec
+rule ecd dec
+rule fdc dfc
+rule fcd dfc
+rule fec efc
+rule fce efc
+rule fed efd
+rule fde efd
+rule ba (ba)
+rule ca (ca)
+rule da (da)
+rule ea (ea)
+rule fa (fa)
+rule cb (cb)
+rule db (db)
+rule eb (eb)
+rule fb (fb)
+rule dc (dc)
+rule ec (ec)
+rule fc (fc)
+rule ed (ed)
+rule fd (fd)
+rule fe (fe)
+rule bb (bb)
+rule cc (cc)
+rule dd (dd)
+rule ee (ee)
+
+kbc

@@ -1,0 +1,15 @@
+order deglex
+gen s
+gen t
+gen u
+gen v
+rule ss ""
+rule tt ""
+rule uu ""
+rule vv ""
+rule tst sts
+rule us su
+rule vs sv
+rule utu tut
+rule vt tv
+rule vuv uvu

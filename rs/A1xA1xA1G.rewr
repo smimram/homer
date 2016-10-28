@@ -1,0 +1,20 @@
+order revdeglex2
+gen s
+gen t
+gen u
+gen st
+gen su
+gen tu
+gen stu
+rule st (st)
+rule su (su)
+rule tu (tu)
+rule ts (st)
+rule ut (tu)
+rule us (su)
+rule s(tu) (stu)
+rule (tu)s (stu)
+rule t(su) (stu)
+rule (su)t (stu)
+rule u(st) (stu)
+rule (st)u (stu)

@@ -1,0 +1,310 @@
+order revweightlex
+gen s
+gen t
+gen ss
+gen st
+gen ts
+gen tt
+gen sss
+gen sst
+gen sts
+gen stt
+gen tss
+gen tts
+gen ttt
+gen S
+gen T
+gen SS
+gen ST
+gen TS
+gen TT
+gen SSS
+gen SST
+gen STS
+gen STT
+gen TSS
+gen TTS
+gen TTT
+rule ss (ss)
+rule st (st)
+rule ts (ts)
+rule tt (tt)
+rule (ss)s (sss)
+rule (ss)t (sst)
+rule (st)t (stt)
+rule t(ss) (tss)
+rule t(ts) (tts)
+rule (tt)t (ttt)
+rule t(st) (sts)
+rule (st)s (sts)
+rule s(ss) (sss)
+rule s(st) (sst)
+rule s(ts) (sts)
+rule s(tt) (stt)
+rule (ts)s (tss)
+rule (ts)t (sts)
+rule (tt)s (tts)
+rule t(tt) (ttt)
+rule SS (SS)
+rule ST (ST)
+rule TS (TS)
+rule TT (TT)
+rule (SS)S (SSS)
+rule (SS)T (SST)
+rule (ST)T (STT)
+rule T(SS) (TSS)
+rule T(TS) (TTS)
+rule (TT)T (TTT)
+rule T(ST) (STS)
+rule (ST)S (STS)
+rule S(SS) (SSS)
+rule S(ST) (SST)
+rule S(TS) (STS)
+rule S(TT) (STT)
+rule (TS)S (TSS)
+rule (TS)T (STS)
+rule (TT)S (TTS)
+rule T(TT) (TTT)
+rule Ss ""
+rule sS ""
+rule Tt ""
+rule tT ""
+rule S(ss) s
+rule S(st) t
+rule T(ts) s
+rule T(tt) t
+rule s(SS) S
+rule s(ST) T
+rule t(TS) S
+rule t(TT) T
+rule (SS)s S
+rule (ST)t S
+rule (TS)s T
+rule (TT)t T
+rule (ss)S s
+rule (st)T s
+rule (ts)S t
+rule (tt)T t
+rule (SSS)s (SS)
+rule (SST)t (SS)
+rule (STS)s (ST)
+rule (STS)t (TS)
+rule (STT)t (ST)
+rule (TSS)s (TS)
+rule (TTS)s (TT)
+rule (TTT)t (TT)
+rule (sss)S (ss)
+rule (sst)T (ss)
+rule (sts)S (st)
+rule (sts)T (ts)
+rule (stt)T (st)
+rule (tss)S (ts)
+rule (tts)S (tt)
+rule (ttt)T (tt)
+rule t(STS) (ST)
+rule t(TSS) (SS)
+rule t(TTS) (TS)
+rule t(TTT) (TT)
+rule T(sts) (st)
+rule T(tss) (ss)
+rule T(tts) (ts)
+rule T(ttt) (tt)
+rule s(SSS) (SS)
+rule s(SST) (ST)
+rule s(STS) (TS)
+rule s(STT) (TT)
+rule S(sss) (ss)
+rule S(sst) (st)
+rule S(sts) (ts)
+rule S(stt) (tt)
+rule (tt)(TS) tS
+rule (tt)(TT) ""
+rule (ts)(SS) tS
+rule (ts)(ST) ""
+rule (st)(TS) ""
+rule (st)(TT) sT
+rule (TT)(tt) ""
+rule (ss)(SS) ""
+rule (ss)(ST) sT
+rule (TS)(st) ""
+rule (ST)(ts) ""
+rule (SS)(ss) ""
+rule (SSS)(ss) S
+rule (SSS)(st) (SS)t
+rule (SST)(ts) S
+rule (SST)(tt) (SS)t
+rule (STS)(st) S
+rule (STS)(ts) T
+rule (STT)(tt) S
+rule (TSS)(ss) T
+rule (TTS)(ss) (TT)s
+rule (TTS)(st) T
+rule (TTT)(ts) (TT)s
+rule (TTT)(tt) T
+rule (sss)(SS) s
+rule (sss)(ST) (ss)T
+rule (sst)(TS) s
+rule (sst)(TT) (ss)T
+rule (sts)(SS) (st)S
+rule (sts)(ST) s
+rule (sts)(TS) t
+rule (sts)(TT) (ts)T
+rule (stt)(TS) (st)S
+rule (stt)(TT) s
+rule (tss)(SS) t
+rule (tss)(ST) (ts)T
+rule (tts)(SS) (tt)S
+rule (tts)(ST) t
+rule (ttt)(TS) (tt)S
+rule (ttt)(TT) t
+rule (tt)(STS) t(ST)
+rule (tt)(TSS) t(SS)
+rule (tt)(TTS) S
+rule (tt)(TTT) T
+rule (ts)(SSS) t(SS)
+rule (ts)(SST) t(ST)
+rule (ts)(STS) S
+rule (ts)(STT) T
+rule (st)(STS) T
+rule (st)(TSS) S
+rule (st)(TTS) s(TS)
+rule (st)(TTT) s(TT)
+rule (TT)(tts) s
+rule (TT)(ttt) t
+rule (ss)(SSS) S
+rule (ss)(SST) T
+rule (ss)(STS) s(TS)
+rule (ss)(STT) s(TT)
+rule (TS)(sts) s
+rule (TS)(stt) t
+rule (ST)(sts) t
+rule (ST)(tss) s
+rule (SS)(sss) s
+rule (SS)(sst) t
+rule (SSS)(stt) (SS)(tt)
+rule (SSS)(sss) ""
+rule (SST)(ttt) (SS)(tt)
+rule (SST)(tss) ""
+rule (STS)(sts) ""
+rule (STT)(tts) ""
+rule (TSS)(sst) ""
+rule (TTS)(stt) ""
+rule (TTT)(ttt) ""
+rule (sss)(SST) sT
+rule (sss)(SSS) ""
+rule (sst)(TSS) ""
+rule (sst)(STS) sT
+rule (sts)(TSS) tS
+rule (sts)(STT) sT
+rule (sts)(STS) ""
+rule (stt)(TTT) sT
+rule (stt)(TTS) ""
+rule (tss)(SST) ""
+rule (tss)(SSS) tS
+rule (tts)(STT) ""
+rule (tts)(STS) tS
+rule (ttt)(TTT) ""
+rule (ttt)(TTS) tS
+rule (sss)(STT) (ss)(TT)
+rule (sss)(STS) (ss)(TS)
+rule (sst)(TTT) (ss)(TT)
+rule (sst)(TTS) (ss)(TS)
+rule (sts)(TTT) (ts)(TT)
+rule (sts)(TTS) (ts)(TS)
+rule (sts)(SST) (st)(ST)
+rule (sts)(SSS) (st)(SS)
+rule (stt)(TSS) (st)(SS)
+rule (stt)(STS) (st)(ST)
+rule (tss)(STT) (ts)(TT)
+rule (tss)(STS) (ts)(TS)
+rule (ttt)(TSS) (tt)(SS)
+rule (ttt)(STS) (tt)(ST)
+rule T(st) (st)S
+rule (TT)(sts) (st)S
+rule (TS)(sst) (st)S
+rule S(ts) (ts)T
+rule (ST)(tts) (ts)T
+rule (SS)(sts) (ts)T
+rule (ST)s t(ST)
+rule (STS)(ss) t(ST)
+rule (STT)(ts) t(ST)
+rule (TS)t s(TS)
+rule (STS)(tt) s(TS)
+rule (TSS)(st) s(TS)
+rule (ST)(st) tS
+rule (TS)(ts) sT
+rule (STS)(tts) sT
+rule (TS)(tts) (ss)T
+rule St (ts)(TS)
+rule (ST)(tt) (ts)(TS)
+rule (SS)(st) (ts)(TS)
+rule (SSS)(sst) (ts)(TS)
+rule (SST)(sts) (ts)(TS)
+rule (STS)(stt) (ts)(TS)
+rule (STT)(ttt) (ts)(TS)
+rule Ts (st)(ST)
+rule (TT)(ts) (st)(ST)
+rule (TS)(ss) (st)(ST)
+rule (STS)(tss) (st)(ST)
+rule (TSS)(sss) (st)(ST)
+rule (TTS)(sts) (st)(ST)
+rule (TTT)(tts) (st)(ST)
+rule S(tt) (tss)(TS)
+rule (ST)(ttt) (tss)(TS)
+rule (SS)(stt) (tss)(TS)
+rule T(sst) (stt)S
+rule (TT)(st) (st)(SS)
+rule (TS)(tt) (ss)(TS)
+rule (STS)(ttt) (ss)(TS)
+rule (SS)(ts) (ts)(TT)
+rule (SSS)(sts) (ts)(TT)
+rule (SST)(tts) (ts)(TT)
+rule (ST)(ss) (tt)(ST)
+rule (STT)s t(SST)
+rule (TSS)t s(TTS)
+rule S(tts) (tss)T
+rule T(ss) (stt)(ST)
+rule (TT)(tss) (stt)(ST)
+rule (TS)(sss) (stt)(ST)
+rule (TSS)(ts) s(TT)
+rule (STT)(st) t(SS)
+rule (STT)(sts) tS
+rule (TSS)(sts) sT
+rule (ST)(sst) (tt)S
+rule (ST)(sss) (ttt)(ST)
+
+rule (SS)t (ts)(TTS) 
+
+rule (SSS)(ts) (ts)(TTT)
+
+rule (TS)(ttt) (sss)(TS)
+
+rule (TT)s (st)(SST) 
+
+rule (TTS)(ts) (st)(STT) 
+rule (SST)(st) (ts)(TSS)
+rule (TS)(tss) (sst)(ST)
+rule (ST)(stt) (tts)(TS)
+rule (TSS)(stt) (ss)(TS)
+
+rule (STT)(tss) (tt)(ST)
+
+rule (STS)(sst) tS
+rule (STS)(sss) (tt)(ST)
+
+rule (TTT)(st) (st)(SSS) 
+rule (TTS)(tts) (stt)(STT)
+
+rule (TSS)(tts) (sst)(STT)
+rule (STT)(sst) (tts)(TSS)
+rule (SST)(sst) (tss)(TSS)
+
+rule (SST)(stt) (tss)(TTS)
+rule (STT)(stt) (tts)(TTS)
+rule (TSS)(tss) (sst)(SST)
+rule (TTS)(sss) (TT)(ss)
+rule (TTS)(sst) (st)(SS)
+rule (TTS)(tss) (stt)(SST)
+rule (TTT)(sts) (st)(SS)
+rule (TTT)(tss) (TT)(ss)
+

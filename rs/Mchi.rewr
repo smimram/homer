@@ -1,0 +1,7 @@
+order deglex
+gen x
+gen y
+gen z
+rule yzxx xzxy
+rule zxyzx yzxxz
+rule zxyzx xzxyz

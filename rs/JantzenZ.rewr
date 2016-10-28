@@ -1,0 +1,8 @@
+order deglex
+gen a
+gen b
+gen aa
+gen bb
+rule abba ""
+rule aa (aa)
+rule bb (bb)

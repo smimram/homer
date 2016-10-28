@@ -1,0 +1,44 @@
+order revdeglex2
+gen a
+gen b
+gen c
+gen d
+gen e
+rule ac ca
+rule ad da
+rule bc cb
+rule bd db
+rule eca ce
+rule edb de
+rule ccae cca
+rule eddb ded
+rule edcb dec
+rule ecda ced
+rule ecca cec
+rule ccdab ccdae
+rule cece cec
+rule edddb dedd
+rule eddcb dedc
+rule edcdb decd
+rule edccb decc
+rule ecdda cedd
+rule ecdca cedc
+rule eccda cecd
+rule eccca cecc
+rule cccaa ccca
+rule ccbae ccba
+rule ccaae ccaa
+rule ccee cce
+rule ccec cecc
+rule ccce cecc
+rule cecdb cecde
+rule cecce cecc
+rule ccede ccde
+rule ccbee ccbe
+rule cbece cbec
+rule cbecc cccbe
+rule caece caec
+rule caecc ccca
+rule ccbec cccbe
+rule ceece ceec
+rule ceecc cecc

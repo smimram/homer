@@ -1,0 +1,13 @@
+order revdeglex2
+gen 1
+gen 2
+gen 3
+rule 11 (1)
+rule 22 2
+rule 33 3
+rule 1212 212
+rule 2121 212
+rule 2323 323
+rule 3232 323
+rule 13 31
+

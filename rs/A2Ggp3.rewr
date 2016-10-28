@@ -1,0 +1,50 @@
+order revweightlex
+gen a
+gen b
+gen ab
+gen ba
+gen aba
+gen A
+gen B
+gen AB
+gen BA
+gen ABA
+gen Ab
+gen aB
+gen Ba
+gen bA
+gen Aba
+gen aBa
+gen abA
+gen ABa
+gen AbA
+gen aBA
+rule ab (ab)
+rule ba (ba)
+rule a(ba) (aba)
+rule b(ab) (aba)
+rule (ab)a (aba)
+rule (ba)b (aba)
+rule (ba)(aba) (aba)(ab)
+rule (ba)(ba) (aba)a
+rule (ab)(aba) (aba)(ba)
+rule (ab)(ab) (aba)b
+rule b(aba) (aba)a
+rule a(aba) (aba)b
+rule Aa ""
+rule aA ""
+rule Bb ""
+rule bB ""
+rule AB (AB)
+rule BA (BA)
+rule ABA (ABA)
+rule Ab (Ab)
+rule aB (aB)
+rule Ba (Ba)
+rule bA (bA)
+rule Aba (Aba)
+rule aBa (aBa)
+rule abA (abA)
+rule ABa (ABa)
+rule AbA (AbA)
+rule aBA (aBA)

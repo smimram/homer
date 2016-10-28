@@ -1,0 +1,33 @@
+order revweightlex
+gen s
+gen t
+gen st
+gen S
+gen T
+gen TS
+rule st (st)
+rule t(st) (st)s
+rule TS (TS)
+rule Ss ""
+rule sS ""
+rule Tt ""
+rule tT ""
+rule S(st) t
+rule t(TS) S
+rule (TS)s T
+rule (st)T s
+rule (TS)(st) ""
+rule (st)(TS) ""
+rule sT (TS)ts
+rule s(TS) (TS)t
+rule T(st)s (st)
+rule (st)S T(st)
+rule tS ST(st)
+rule s(st)s (st)(st)
+rule S(TS)t (TS)
+rule (TS)T S(TS)
+rule S(TS)S (TS)(TS)
+rule (TS)(TS)t T(TS)
+rule s(st)(st) (st)(st)t
+rule T(st)(st) (st)t
+rule (TS)(TS)S T(TS)(TS)

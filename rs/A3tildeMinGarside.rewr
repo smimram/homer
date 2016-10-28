@@ -1,0 +1,27 @@
+order revweightlex
+gen a b c d
+rule bab aba
+rule cbc bcb
+rule dcd cdc
+rule dad ada
+rule ca ac
+rule db bd
+rgen ab ba ac ad da bc cb bd cd dc
+
+rgen aba ada bcb abc cba dba bad dab bac acb abd cdc cda adc bcd dcb cbd bdc dca acd 
+
+rgen bacb acba adba bcba abad bada  bdab adab cbdc bdcb cadc cdcb cbcd babc abcb acda dacd bcdc dcda adca dbac acbd
+
+rgen abacb bacba  badab abcba babda abdab  adacd cdacd bcbdc cbdcb bcdcb adcda abdcb dacba cdbad bcadc abcdc bcdad cdaba  dabcb 
+
+rgen abacba abadab acdacd bcbdcb abcdcb cbadab dcbabc badcda dbacba cadbad bcdacd bdcadc acbdcb abcbdc cdabda dabcab abcadc cbacda dabdcb cdacba
+
+rgen cabcdcb acbadab bdcbabc dbadcda adbacba dcadbad cbdcadc bacbdcb abcdacd bcdabda cdabcab dabcdbc 
+
+rgen dadbacba cdcadbad bcbdcadc abacbdcb babcdacd cbcdabda dcdabcab  adabcdbc 
+
+rgen abcbdcadc badabcdbc adcdabcab bcdcadbad  
+
+rgen abcdcadbad bacbdcbabc  cbadabcdbc dabcbdcadc  
+
+canonize

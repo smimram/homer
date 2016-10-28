@@ -1,0 +1,158 @@
+order revweightlex
+gen x
+gen y
+gen z
+gen xx
+gen xxz
+gen xxzx
+gen xxzxy
+gen xxzxyz
+gen xz
+gen xzx
+gen xzxy
+gen xzxyz
+gen zx
+gen zxy
+gen zxyz
+gen xy
+gen xyz
+gen yz
+rule xx (xx)
+rule xz (xz)
+rule zx (zx)
+rule xy (xy)
+rule yz (yz)
+rule (xx)z (xxz)
+rule (xx)(zx) (xxzx)
+rule (xxzx)y (xxzxy)
+rule (xxzx)(yz) (xxzxyz)
+rule (xz)x (xzx)
+rule (xzxy)z (xzxyz)
+rule (zx)y (zxy)
+rule (zx)(yz) (zxyz)
+rule (xy)z (xyz)
+rule (yz)(xx) (xzxy)
+rule (xz)(xy) (xzxy)
+rule (zxy)(zx) (xzxyz)
+rule (xy)(zx) (xyz)x
+rule (zxy)z (zxyz)
+rule (xzx)y (xzxy)
+rule (xz)(xz) (xzx)z
+rule (xz)(xx) (xzx)x
+rule (xxzx)(xzxyz) (xxzxyz)(xxz)
+rule (xxzx)(xzxy) (xxzxyz)(xx)
+rule (xxzxy)z (xxzxyz)
+rule (xx)(zxyz) (xxzxyz)
+rule (xx)(zxy) (xxzxy)
+rule (xxz)x (xxzx)
+rule y(zx) (yz)x
+rule x(yz) (xyz)
+rule z(xy) (zxy)
+rule z(xz) (zx)z
+rule z(xx) (zx)x
+rule x(zx) (xzx)
+rule x(xy) (xx)y
+rule x(xz) (xxz)
+rule x(xx) (xx)x
+rule (yz)(xxz) (xzxyz)
+rule (xz)(xyz) (xzxyz)
+rule x(xxzx) (xx)(xzx)
+rule x(xxz) (xx)(xz)
+rule x(xzx) (xxzx)
+rule x(xyz) (xx)(yz)
+rule x(zxy) (xzxy)
+rule z(xxzx) (zx)(xzx)
+rule z(xxz) (zx)(xz)
+rule z(xzxy) (zx)(zxy)
+rule z(xzx) (zx)(zx)
+rule z(xyz) (zxyz)
+rule y(zxyz) (yz)(xyz)
+rule y(zxy) (yz)(xy)
+rule (xxz)(xxz) (xxzx)(xz)
+rule (xxz)(xzx) (xxzx)(zx)
+rule (xyz)(xxz) (xxzxyz)
+rule (xyz)(xx) (xxzxy)
+rule (xxz)(xz) (xxzx)z
+rule (xxz)(xx) (xxzx)x
+rule (xxzxy)(zxy) (xxzxyz)(xy)
+rule (xxzxy)(zx) (xxzxyz)x
+rule (xz)(xxzx) (xzx)(xzx)
+rule (xz)(xxz) (xzx)(xz)
+rule (xz)(xzxyz) (xzx)(zxyz)
+rule (xz)(xzxy) (xzx)(zxy)
+rule (xz)(xzx) (xzx)(zx)
+rule (xzx)(yz) (xzxyz)
+rule (zxyz)(xz) (xzxyz)z
+rule (zxyz)x (xzxyz)
+rule (xy)(zxyz) (xyz)(xyz)
+rule (xy)(zxy) (xyz)(xy)
+rule (zxy)(zxyz) (xzxyz)(yz)
+rule (zxyz)(xy) (xzxyz)y
+rule x(xxzxy) (xx)(xzxy)
+rule x(xxzxyz) (xxzxyz)x
+rule x(xzxyz) (xxzxyz)
+rule x(xzxy) (xxzxy)
+rule x(zxyz) (xzxyz)
+rule z(xzxyz) (zx)(zxyz)
+rule (xxz)(xyz) (xxzxyz)
+rule (xxz)(xy) (xxzxy)
+rule (xx)(xzxyz) (xxzxyz)x
+rule (zxy)(zxy) (xzxyz)y
+rule (xzx)(xzxy) (xxzxyz)x
+rule (xyz)(xxzx) (xxzxyz)x
+rule (xz)(xxzxy) (xxzxyz)x
+rule (xzxyz)(xxzx) (xxzxyz)(xzx)
+rule (xzxyz)(xxzxy) (xxzxyz)(xzxy)
+rule (xzxyz)(xxz) (xxzxyz)(xz)
+rule (xyz)(xxzxyz) (xxzxyz)(xyz)
+rule (xyz)(xxzxy) (xxzxyz)(xy)
+rule (xzxyz)(xxzxyz) (xxzxyz)(xzxyz)
+rule (zxy)(xzxyz) (xzxyz)(yz)x
+rule (xxzxy)(zxyz) (xxzxyz)(xyz)
+rule (xxz)(xxzxy) (xxzxyz)(xx)
+rule (xxz)(xxzxyz) (xxzxyz)(xxz)
+rule (xzxyz)(xy) (xxzxyz)y
+rule (xzxyz)x (xxzxyz)
+rule (xzxyz)(xz) (xxzxyz)z
+rule (xzxyz)(xx) (xxzxyz)x
+rule (zxyz)(xyz) (xzxyz)(yz)
+rule (xy)(xzxyz) (xyz)(xyz)x
+rule (zxyz)(xzxyz) (xzxyz)(zxyz)
+rule (zxyz)(xzxy) (xzxyz)(zxy)
+rule (zxyz)(xzx) (xzxyz)(zx)
+rule (xzxy)(xxzxyz) (xxzxyz)(xzxy)
+rule (xxzxy)(xzxyz) (xxzxyz)(xyz)x
+rule (xxzx)(xxzxyz) (xxzxyz)(xxzx)
+rule (xxz)(xxzx) (xxzx)(xzx)
+rule (xxz)(xzxyz) (xxzx)(zxyz)
+rule (xxz)(xzxy) (xxzx)(zxy)
+rule y(xzxyz) (yz)(xyz)x
+rule y(xxzxyz) (xxzxyz)y
+rule (xzxyz)(xyz) (xxzxyz)(yz)
+rule (xx)(xxzxyz) (xxzxyz)(xx)
+rule (xzx)(xxzxyz) (xxzxyz)(xzx)
+rule (zx)(xzxyz) (xxzxyz)z
+rule (xzxy)(zx) (xxzxyz)
+rule (yz)(xxzx) (xxzxyz)
+rule (yz)(xxzxyz) (xxzxyz)(yz)
+rule (yz)(xxzxy) (xxzxyz)y
+rule (xzxy)(zxyz) (xxzxyz)(yz)
+rule (xzxy)(zxy) (xxzxyz)y
+rule (zxyz)(xx) (xxzxyz)
+rule (zx)(xzxy) (xxzxyz)
+rule z(xxzxy) (xxzxyz)
+rule z(xxzxyz) (xxzxyz)z
+rule (xzx)(xzxyz) (xxzxyz)(xz)
+rule (xz)(xxzxyz) (xxzxyz)(xz)
+rule (zxyz)(xxz) (xxzxyz)z
+rule (xzxy)(xzxyz) (xxzxyz)(yz)x
+rule (xxzxy)(xxzxyz) (xxzxyz)(xxzxy)
+rule (xy)(xxzxyz) (xxzxyz)(xy)
+rule (xzxyz)(xzxy) (xxzxyz)(zxy)
+rule (xzxyz)(xzxyz) (xxzxyz)(zxyz)
+rule (xzxyz)(xzx) (xxzxyz)(zx)
+rule (zxy)(xxzxyz) (xxzxyz)(zxy)
+rule (zxyz)(xxzx) (xxzxyz)(zx)
+rule (zxyz)(xxzxy) (xxzxyz)(zxy)
+rule (zxyz)(xxzxyz) (xxzxyz)(zxyz)
+rule (zx)(xxzxyz) (xxzxyz)(zx)

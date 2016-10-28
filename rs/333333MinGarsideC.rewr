@@ -1,0 +1,359 @@
+order revweightlex
+gen a
+gen b
+gen c
+gen d
+gen ab
+gen ba
+gen aba
+gen ac
+gen ca
+gen aca
+gen ad
+gen da
+gen ada
+gen bc
+gen cb
+gen bcb
+gen bd
+gen db
+gen bdb
+gen cd
+gen dc
+gen cdc
+gen abcb
+gen abdb
+gen baca
+gen bada
+gen acdc
+gen caba
+gen cada
+gen daba
+gen daca
+gen bcdc
+gen cbdb
+gen dbcb
+rule ab (ab)
+rule ba (ba)
+rule ac (ac)
+rule ca (ca)
+rule ad (ad)
+rule da (da)
+rule bc (bc)
+rule cb (cb)
+rule bd (bd)
+rule db (db)
+rule cd (cd)
+rule dc (dc)
+rule (ab)a (aba)
+rule (ac)a (aca)
+rule (ad)a (ada)
+rule (bc)b (bcb)
+rule (bd)b (bdb)
+rule (cd)c (cdc)
+rule (ab)(cb) (abcb)
+rule (ab)(db) (abdb)
+rule (ba)(ca) (baca)
+rule (ba)(da) (bada)
+rule (ac)(dc) (acdc)
+rule c(aba) (caba)
+rule (ca)(da) (cada)
+rule d(aba) (daba)
+rule d(aca) (daca)
+rule (bc)(dc) (bcdc)
+rule (cb)(db) (cbdb)
+rule d(bcb) (dbcb)
+rule b(ab) (aba)
+rule c(ac) (aca)
+rule c(bc) (bcb)
+rule d(ad) (ada)
+rule d(bd) (bdb)
+rule d(cd) (cdc)
+rule d(cdc) (cdc)c
+rule d(bdb) (bdb)b
+rule d(ada) (ada)a
+rule c(bcdc) (bcb)(dc)
+rule c(bcb) (bcb)b
+rule c(acdc) (aca)(dc)
+rule c(aca) (aca)a
+rule b(abdb) (aba)(db)
+rule b(abcb) (aba)(cb)
+rule b(aba) (aba)a
+rule (ba)(cada) (baca)(da)
+rule (ab)(cbdb) (abcb)(db)
+rule (cd)(bcb) (cdc)(bc)
+rule (cd)(aca) (cdc)(ac)
+rule (cd)(caba) (cdc)(aba)
+rule (cd)(cd) (cdc)d
+rule (cd)(cb) (cdc)b
+rule (cd)(ca) (cdc)a
+rule (bd)(aba) (bdb)(ab)
+rule (bd)(bd) (bdb)d
+rule (bd)(bc) (bdb)c
+rule (bd)(ba) (bdb)a
+rule (bc)(aba) (bcb)(ab)
+rule (bc)(bd) (bcb)d
+rule (bc)(bc) (bcb)c
+rule (bc)(ba) (bcb)a
+rule (ad)(ad) (ada)d
+rule (ad)(ac) (ada)c
+rule (ad)(ab) (ada)b
+rule (ac)(ad) (aca)d
+rule (ac)(ac) (aca)c
+rule (ac)(ab) (aca)b
+rule (ab)(ad) (aba)d
+rule (ab)(ac) (aba)c
+rule (ab)(ab) (aba)b
+rule (dc)(bc) (dbcb)
+rule (dc)(ac) (daca)
+rule d(caba) (dc)(aba)
+rule (dc)d (cdc)
+rule d(cb) (dc)b
+rule d(ca) (dc)a
+rule c(cdc) (cdc)d
+rule c(dbcb) (cdc)(bc)
+rule c(daca) (cdc)(ac)
+rule c(daba) (cd)(aba)
+rule c(dc) (cdc)
+rule c(db) (cd)b
+rule c(da) (cd)a
+rule (db)(ab) (daba)
+rule (db)d (bdb)
+rule d(bc) (db)c
+rule d(ba) (db)a
+rule b(bdb) (bdb)d
+rule b(daca) (bd)(aca)
+rule b(daba) (bdb)(ab)
+rule b(dc) (bd)c
+rule b(db) (bdb)
+rule b(da) (bd)a
+rule (cb)(ab) (caba)
+rule c(bd) (cb)d
+rule (cb)c (bcb)
+rule c(ba) (cb)a
+rule b(bcb) (bcb)c
+rule b(caba) (bcb)(ab)
+rule b(cd) (bc)d
+rule b(cb) (bcb)
+rule b(ca) (bc)a
+rule (da)d (ada)
+rule d(ac) (da)c
+rule d(ab) (da)b
+rule a(ada) (ada)d
+rule a(dbcb) (ad)(bcb)
+rule a(dc) (ad)c
+rule a(db) (ad)b
+rule a(da) (ada)
+rule c(ad) (ca)d
+rule (ca)c (aca)
+rule c(ab) (ca)b
+rule a(aca) (aca)c
+rule a(cd) (ac)d
+rule a(cb) (ac)b
+rule a(ca) (aca)
+rule b(ad) (ba)d
+rule b(ac) (ba)c
+rule (ba)b (aba)
+rule a(aba) (aba)b
+rule a(bd) (ab)d
+rule a(bc) (ab)c
+rule a(ba) (aba)
+rule a(bada) (aba)(da)
+rule a(baca) (aba)(ca)
+rule a(bcdc) (ab)(cdc)
+rule (ac)(bc) (abcb)
+rule (ad)(bd) (abdb)
+rule (ba)(bcb) (aba)(cb)
+rule (ba)(bdb) (aba)(db)
+rule (ba)(aba) (aba)(ab)
+rule (ba)(bd) (aba)d
+rule (ba)(bc) (aba)c
+rule (ba)(ba) (aba)a
+rule b(acdc) (ba)(cdc)
+rule (bc)(ac) (baca)
+rule (bd)(ad) (bada)
+rule a(cada) (aca)(da)
+rule a(cbdb) (ac)(bdb)
+rule (ad)(cd) (acdc)
+rule (ca)(aba) (caba)b
+rule c(abdb) (ca)(bdb)
+rule (ca)(ba) (caba)
+rule (ca)(cdc) (aca)(dc)
+rule (ca)(bcb) (aca)(bc)
+rule (ca)(aca) (aca)(ac)
+rule (ca)(caba) (aca)(aba)
+rule (ca)(cd) (aca)d
+rule (ca)(cb) (aca)b
+rule (ca)(ca) (aca)a
+rule (cd)(ad) (cada)
+rule (da)(aba) (daba)b
+rule d(abcb) (da)(bcb)
+rule (da)(ba) (daba)
+rule (da)(aca) (daca)c
+rule (da)(ca) (daca)
+rule (da)(cdc) (ada)(cd)
+rule (da)(bdb) (ada)(bd)
+rule (da)(ada) (ada)(ad)
+rule (da)(dbcb) (ada)(bcb)
+rule (da)(daca) (ada)(aca)
+rule (da)(daba) (ada)(aba)
+rule (da)(dc) (ada)c
+rule (da)(db) (ada)b
+rule (da)(da) (ada)a
+rule b(cada) (bc)(ada)
+rule b(cbdb) (bcb)(db)
+rule (bd)(cd) (bcdc)
+rule c(bada) (cb)(ada)
+rule (cb)(cdc) (bcb)(dc)
+rule (cb)(cada) (bcb)(ada)
+rule (cb)(bcb) (bcb)(bc)
+rule (cb)(aca) (bcb)(ac)
+rule (cb)(caba) (bcb)(aba)
+rule (cb)(cd) (bcb)d
+rule (cb)(cb) (bcb)b
+rule (cb)(ca) (bcb)a
+rule (cd)(bd) (cbdb)
+rule (cb)(abdb) (caba)(db)
+rule (cb)(abcb) (caba)(cb)
+rule (cb)(aba) (caba)a
+rule d(baca) (db)(aca)
+rule (db)(bcb) (dbcb)c
+rule (db)(caba) (dbcb)(ab)
+rule (db)(cb) (dbcb)
+rule (db)(cdc) (bdb)(cd)
+rule (db)(bdb) (bdb)(bd)
+rule (db)(ada) (bdb)(ad)
+rule (db)(dbcb) (bdb)(bcb)
+rule (db)(daca) (bdb)(aca)
+rule (db)(daba) (bdb)(aba)
+rule (db)(dc) (bdb)c
+rule (db)(db) (bdb)b
+rule (db)(da) (bdb)a
+rule (db)(abdb) (daba)(db)
+rule (db)(abcb) (daba)(cb)
+rule (db)(aba) (daba)a
+rule (dc)(cdc) (cdc)(cd)
+rule (dc)(bdb) (cdc)(bd)
+rule (dc)(ada) (cdc)(ad)
+rule (dc)(dbcb) (cdc)(bcb)
+rule (dc)(daca) (cdc)(aca)
+rule (dc)(daba) (cdc)(aba)
+rule (dc)(dc) (cdc)c
+rule (dc)(db) (cdc)b
+rule (dc)(da) (cdc)a
+rule (dc)(acdc) (daca)(dc)
+rule (dc)(aca) (daca)a
+rule (dc)(bcdc) (dbcb)(dc)
+rule (dc)(bcb) (dbcb)b
+rule (ab)(abdb) (aba)(bdb)
+rule (ab)(abcb) (aba)(bcb)
+rule (ab)(aba) (aba)(ba)
+rule (ab)(acdc) (aba)(cdc)
+rule (ab)(aca) (aba)(ca)
+rule (ab)(ada) (aba)(da)
+rule (ac)(abdb) (aca)(bdb)
+rule (ac)(abcb) (aca)(bcb)
+rule (ac)(aba) (aca)(ba)
+rule (ac)(acdc) (aca)(cdc)
+rule (ac)(aca) (aca)(ca)
+rule (ac)(ada) (aca)(da)
+rule (ad)(abdb) (ada)(bdb)
+rule (ad)(abcb) (ada)(bcb)
+rule (ad)(aba) (ada)(ba)
+rule (ad)(acdc) (ada)(cdc)
+rule (ad)(aca) (ada)(ca)
+rule (ad)(ada) (ada)(da)
+rule (bc)(bada) (bcb)(ada)
+rule (bc)(baca) (bcb)(aca)
+rule (bc)(bcdc) (bcb)(cdc)
+rule (bc)(bcb) (bcb)(cb)
+rule (bc)(bdb) (bcb)(db)
+rule (bd)(bada) (bdb)(ada)
+rule (bd)(baca) (bdb)(aca)
+rule (bd)(bcdc) (bdb)(cdc)
+rule (bd)(bcb) (bdb)(cb)
+rule (bd)(bdb) (bdb)(db)
+rule (cd)(cada) (cdc)(ada)
+rule (cd)(cbdb) (cdc)(bdb)
+rule (cd)(cdc) (cdc)(dc)
+rule c(bdb) (cbdb)
+rule c(ada) (cada)
+rule b(cdc) (bcdc)
+rule b(ada) (bada)
+rule b(dbcb) (bdb)(cb)
+rule b(aca) (baca)
+rule a(cdc) (acdc)
+rule a(bdb) (abdb)
+rule a(daca) (ada)(ca)
+rule a(daba) (ada)(ba)
+rule a(bcb) (abcb)
+rule a(caba) (aca)(ba)
+rule (ab)(bcb) (abcb)c
+rule (ab)(caba) (abcb)(ab)
+rule (ab)(bdb) (abdb)d
+rule (ab)(daba) (abdb)(ab)
+rule (ba)(aca) (baca)c
+rule (ba)(ada) (bada)d
+rule (ac)(cdc) (acdc)d
+rule (ac)(daca) (acdc)(ac)
+rule (ac)(dbcb) (acdc)(bc)
+rule c(abcb) (aca)(bc)
+rule (ca)(ada) (cada)d
+rule d(abdb) (ada)(bd)
+rule d(acdc) (ada)(cd)
+rule (bc)(cdc) (bcdc)d
+rule (bc)(daca) (bcdc)(ac)
+rule (bc)(dbcb) (bcdc)(bc)
+rule c(baca) (bcb)(ac)
+rule (cb)(bdb) (cbdb)d
+rule (cb)(daba) (cbdb)(ab)
+rule d(bada) (bdb)(ad)
+rule d(bcdc) (bdb)(cd)
+rule d(cada) (cdc)(ad)
+rule d(cbdb) (cdc)(bd)
+rule (db)(cbdb) (dbcb)(db)
+rule (cd)(bcdc) (cbdb)(cd)
+rule (cd)(bada) (cbdb)(ad)
+rule (cd)(bdb) (cbdb)b
+rule (cb)(cbdb) (bcb)(bdb)
+rule (bd)(cbdb) (bcdc)(bd)
+rule (bd)(cada) (bcdc)(ad)
+rule (bd)(cdc) (bcdc)c
+rule (da)(caba) (daca)(ba)
+rule (da)(cada) (daca)(da)
+rule (da)(bada) (daba)(da)
+rule (da)(baca) (daba)(ca)
+rule (cd)(acdc) (cada)(cd)
+rule (cd)(abdb) (cada)(bd)
+rule (cd)(ada) (cada)a
+rule (ca)(cada) (aca)(ada)
+rule (ca)(cbdb) (aca)(bdb)
+rule (ca)(bada) (caba)(da)
+rule (ca)(baca) (caba)(ca)
+rule (ad)(cbdb) (acdc)(bd)
+rule (ad)(cada) (acdc)(ad)
+rule (ad)(cdc) (acdc)c
+rule (bd)(acdc) (bada)(cd)
+rule (bd)(abdb) (bada)(bd)
+rule (bd)(ada) (bada)a
+rule (bc)(abcb) (baca)(bc)
+rule (bc)(acdc) (baca)(dc)
+rule (bc)(aca) (baca)a
+rule (ba)(bada) (aba)(ada)
+rule (ba)(baca) (aba)(aca)
+rule (ba)(bcdc) (aba)(cdc)
+rule (ad)(bcdc) (abdb)(cd)
+rule (ad)(bada) (abdb)(ad)
+rule (ad)(bdb) (abdb)b
+rule (ac)(baca) (abcb)(ac)
+rule (ac)(bcdc) (abcb)(dc)
+rule (ac)(bcb) (abcb)b
+rule (ab)(dbcb) (abdb)(cb)
+rule (ba)(caba) (baca)(ba)
+rule (ba)(daca) (bada)(ca)
+rule (ba)(daba) (bada)(ba)
+rule (ca)(daca) (cada)(ca)
+rule (ca)(daba) (cada)(ba)
+rule (cb)(dbcb) (cbdb)(cb)
+rule (dc)(abcb) (daca)(bc)
+rule (dc)(baca) (dbcb)(ac)

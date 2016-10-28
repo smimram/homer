@@ -1,0 +1,36 @@
+order deglex
+gen a
+gen b
+gen c
+gen d
+gen x
+gen y
+gen u
+gen v
+gen A
+gen B
+gen C
+gen D
+gen X
+gen Y
+gen U
+gen V
+rule by ax
+rule dy cx
+rule bv au
+rule Aa ""
+rule aA ""
+rule Bb ""
+rule bB ""
+rule Cc ""
+rule cC ""
+rule Dd ""
+rule dD ""
+rule Xx ""
+rule xX ""
+rule Yy ""
+rule yY ""
+rule Uu ""
+rule uU ""
+rule Vv ""
+rule vV ""

@@ -1,0 +1,14 @@
+*~
+\#*\#
+*.a
+*.annot
+*.cma
+*.cmi
+*.cmo
+*.cmx
+*.cmxa
+*.d
+*.o
+._d
+._ncdi
+.depend

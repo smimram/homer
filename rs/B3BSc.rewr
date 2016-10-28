@@ -1,0 +1,76 @@
+order revweightlex
+gen r
+gen s
+gen t
+gen rsrs
+gen sts
+gen rt
+gen rsrstsrst
+rule rsrs (rsrs)
+rule sts (sts)
+rule rt (rt)
+rule srsr (rsrs)
+rule tst (sts)
+rule tr (rt)
+rule (rsrs)tsrst (rsrstsrst)
+rule t(rt) (rt)t
+rule t(rsrs) (rt)srs
+rule ts(rt) (sts)r
+rule t(sts) (sts)s
+rule srs(rt) (rsrs)t
+rule s(rsrs) (rsrs)s
+rule r(rt) (rt)r
+rule r(sts) (rt)st
+rule s(sts) (sts)t
+rule s(rt)srs (sts)rsr
+rule r(rsrs) (rsrs)r
+rule rs(rt)st (rsrs)ts
+rule (rsrs)(rt)srst (rsrstsrst)r
+rule (rsrs)(sts)rst (rsrstsrst)s
+rule (rsrs)(sts)rs(rt) (rsrstsrst)sr
+rule (rsrs)(sts)(rt)st (rsrstsrst)ss
+rule (rsrs)(rt)(rsrs)t (rsrstsrst)rr
+rule (rsrs)(rt)s(rt)st (rsrstsrst)rs
+rule rs(rt)s(rt) (rsrs)tsr
+rule rs(rt)(sts) (rsrs)tss
+rule r(rsrstsrst) (rsrstsrst)r
+rule s(rt)(rsrs) (sts)rsrr
+rule s(rt)s(rt)st (sts)rs(rt)s
+rule s(rsrstsrst) (rsrstsrst)s
+rule s(rt)s(rt)sr (rsrs)tsrs
+rule s(rt)(sts)rsr (rsrs)tsrss
+rule s(rt)s(rt)s(rt) (rsrstsrst)
+rule (sts)(rsrs)tsr (rsrstsrst)t
+rule (sts)rs(rt)sr (rsrstsrst)
+rule s(rt)s(rt)(sts) (sts)rs(rt)ss
+rule (rt)s(rt)s(rt)s (rsrstsrst)
+rule (rsrs)(rt)s(rt)s(rt) (rsrstsrst)rsr
+rule (rsrs)(rt)s(rt)(sts) (rsrstsrst)rss
+rule (rsrs)(rt)(rsrs)(rt) (rsrstsrst)rrr
+rule (rsrs)(rt)(rsrs)(sts) (rsrstsrst)rrst
+rule (rsrs)(sts)(rt)s(rt) (rsrstsrst)ssr
+rule (rsrs)(sts)(rt)(sts) (rsrstsrst)sss
+rule (rsrs)(sts)(rsrs)ts (rsrstsrst)srst
+rule (rsrs)(rsrstsrst) (rsrstsrst)(rsrs)
+rule (sts)(rt)s(rt)sr (rsrstsrst)s
+rule (sts)(rsrstsrst) (rsrstsrst)(sts)
+rule (sts)(rt)(sts)rsr (rsrstsrst)ss
+rule (sts)(rt)s(rt)s(rt) (rsrstsrst)st
+rule (rsrs)(sts)(rsrs)(sts) (rsrstsrst)srstt
+rule (rt)(rsrstsrst) (rsrstsrst)(rt)
+rule (rt)(rsrs)tsrs (rsrstsrst)r
+rule (rt)(sts)rs(rt)s (rsrstsrst)t
+rule (sts)(rsrs)(rt)srs (rsrstsrst)tsr
+rule (sts)(rsrs)(sts)r (rsrstsrst)tt
+rule s(rt)(sts)rs(rt) (rsrs)tsrsst
+rule s(rt)(sts)(rsrs) (rsrs)tsrsss
+rule (rt)(sts)(rsrs)ts (rsrstsrst)tt
+rule t(rsrstsrst) (rsrstsrst)t
+rule (rt)(sts)(rsrs)(sts) (rsrstsrst)ttt
+rule (sts)(rsrs)(sts)(rt) (rsrstsrst)ttt
+rule (sts)(rsrs)(sts)(rsrs) (rsrstsrst)ttsrs
+rule (sts)(rsrs)(rt)(rsrs) (rsrstsrst)tsrr
+rule (rt)(rsrs)(rt)srs (rsrstsrst)rr
+rule (sts)(rt)(sts)rs(rt) (rsrstsrst)sst
+rule (sts)(rt)(sts)(rsrs) (rsrstsrst)sss
+rule (rt)(rsrs)(rt)(rsrs) (rsrstsrst)rrr

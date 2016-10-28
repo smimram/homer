@@ -1,0 +1,55 @@
+order revweightlex
+gen a
+gen b
+gen c
+gen cb
+gen ca
+gen ba
+gen cba
+rule cb (cb)
+rule ca (ca)
+rule ba (ba)
+rule ac (ca)
+rule (cb)a (cba)
+rule a(ba) (ba)b
+rule b(cb) (cb)c
+rule (cb)(ba)b (cba)(ba)
+rule (cb)(ca) (cba)c
+rule a(ca) (ca)a
+rule a(cb) (ca)b
+rule b(ba)b (ba)(ba)
+rule b(ca) (ba)c
+rule c(ca) (ca)c
+rule c(cb)c (cb)(cb)
+rule c(ba) (cba)
+rule b(cba) (cba)c
+rule (ca)(ba) (cba)b
+rule c(cb)(cba) (cb)(cb)(ba)
+rule c(cba)c (cb)(cba)
+rule c(cb)(cb) (cb)(cb)b
+rule c(cba)b (ca)(cba)
+rule (ba)(cba) (cba)(cb)
+rule b(ba)(cb)c (ba)(ba)(cb)
+rule b(ba)(ba) (ba)(ba)a
+rule a(cba) (cba)b
+rule (cb)(cba)b (cba)(cba)
+rule (cb)(cba)(cb)c (cba)(cba)(cb)
+rule (cb)(ba)(cb)c (cba)(ba)(cb)
+rule (cb)(ba)(ba) (cba)(ba)a
+rule (cb)(cba)(cb)(cb) (cba)(cba)(cb)b
+rule (cb)(ba)(cb)(cba) (cba)(ba)(cb)(ba)
+rule (cb)(ba)(cb)(cb) (cba)(ba)(cb)b
+rule (cb)(cba)(cb)(cba) (cba)(cba)(cb)(ba)
+rule (cb)(cba)(cba)c (cba)(cba)(cba)
+rule (cb)(cba)(ba) (cba)(cba)a
+rule b(ba)(cb)(cba) (ba)(ba)(cb)(ba)
+rule b(ba)(cb)(cb) (ba)(ba)(cb)b
+rule c(cba)(ba) (ca)(cba)a
+rule c(cba)(cba) (cba)(cba)a
+rule c(cba)(ca) (cb)(cba)a
+rule c(cba)(cb) (cba)(cba)
+rule (ca)(cba)(cb) (cba)(cba)c
+rule (ca)(cba)(cba) (cba)(cba)(ca)
+rule (cb)(cba)(cba)(cb) (cba)(cba)(cba)b
+rule (cb)(cba)(cba)(cba) (cba)(cba)(cba)(ba)
+rule (cb)(cba)(cba)(ca) (cba)(cba)(cba)a

@@ -1,0 +1,83 @@
+# gen a b
+# rule ba ab
+# rule bb b
+# rule aaa bb
+# rule aa a
+# orient
+# kbc
+# anick 1
+# anick 2
+# anick 3
+# anick 4
+# H 20
+
+mode parity
+# gen a
+# gen b
+# gen c
+# gen d
+# gen f : a -> c
+# gen g1 : a -> b
+# gen g2 : b -> c
+# gen g3 : c -> d
+# gen h : b -> d
+# gen p : f -> g1,g2
+# gen q : g2,g3 -> h
+# sig
+# sigcat
+# cell
+
+# globe 2 3
+# sigcat
+# cube 4
+# sigcat
+# simplex 5
+# sigcat
+# cube 5
+# sigcat
+# associahedron 1
+# sigcat
+# associahedron 2
+# sigcat
+# associahedron 3
+# generator (..(...))
+# sigcat
+permutohedron 2
+sigcat
+permutohedron 3
+check
+sigcat
+bireorient 1010
+bireorient 1100
+generator 1010
+generator 1100
+# generator 0000
+# remove 0000
+# gen 0000 1000,1001,1011,1010,0011,0010,1110,0110 0001,1101,1100,0101,0111,0100
+check
+sigcat
+permutohedron 4
+bireorient 11002
+bireorient 11020
+bireorient 11200
+bireorient 12100
+bireorient 02211
+bireorient 21100
+bireorient 20211
+bireorient 21011
+bireorient 22101
+bireorient 22100
+bireorient 22110
+# Dimension 3....
+# bireorient 00010
+# bireorient 01000
+sigl
+cellng
+# check
+perm 3
+dim 0000
+checko
+perm 3
+# dperm 4
+source
+graphviz

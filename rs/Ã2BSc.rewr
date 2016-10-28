@@ -1,0 +1,24 @@
+gen r
+gen s
+gen t
+gen rsr
+gen sts
+gen rtr
+rule srs (rsr)
+rule sts (sts)
+rule rtr (rtr)
+rule tst (sts)
+rule trt (rtr)
+rule rsr (rsr)
+rule s(rsr) (rsr)r
+rule s(sts) (sts)t
+rule r(rtr) (rtr)t
+rule t(sts) (sts)s
+rule t(rtr) (rtr)r
+rule r(rsr) (rsr)s
+rule sr(sts) (rsr)ts
+rule st(rsr) (sts)rs
+rule rt(rsr) (rtr)sr
+rule ts(rtr) (sts)rt
+rule tr(sts) (rtr)st
+rule rs(rtr) (rsr)tr

@@ -1,0 +1,33 @@
+order revweightlex
+gen a
+gen b
+gen c
+gen d
+gen ab
+gen ac
+gen bc
+gen abc
+gen ad
+gen bd
+gen abd
+gen cd
+gen acd
+gen bcd
+gen abcd
+rule ab (ab)
+rule ac (ac)
+rule bc (bc)
+rule ad (ad)
+rule bd (bd)
+rule cd (cd)
+rule ca (ac)
+rule da (ad)
+rule db (bd)
+rule (ab)c (abc)
+rule (ab)d (abd)
+rule (ac)d (acd)
+rule (bc)d (bcd)
+rule (ab)(cd) (abcd)
+rule b(ab)a (ab)(ab)
+rule c(bc) (bc)b
+rule d(cd) (cd)c

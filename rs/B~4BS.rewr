@@ -1,0 +1,22 @@
+gen r
+gen s
+gen t
+gen u
+rule srsr rsrs
+rule tst sts
+rule usu sus
+rule tr rt
+rule ur ru
+rule ut tu
+rgen rt
+rgen ru
+rgen tu
+rgen rtu
+rgen sts
+rgen sus
+rgen rsrs
+rgen stsuts
+rgen rsrstsrst
+rgen rsrsusrsu
+canonize
+order revweightlex

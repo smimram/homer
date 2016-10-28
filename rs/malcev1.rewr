@@ -1,0 +1,12 @@
+order deglex
+gen a
+gen b
+gen c
+gen d
+gen x
+gen y
+gen u
+gen v
+rule by ax
+rule dy cx
+rule bv au

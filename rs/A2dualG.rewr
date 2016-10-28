@@ -1,0 +1,8 @@
+order revdeglex2
+gen a
+gen b
+gen c
+gen ab
+rule ab (ab)
+rule bc (ab)
+rule ca (ab)

@@ -1,0 +1,35 @@
+order deglex
+gen a1
+gen a2
+gen b1
+gen b2
+gen b3
+gen b4
+gen b'
+gen b''
+gen b'''
+gen c1
+gen c2
+gen c3
+gen c4
+gen c5
+gen c6
+gen c'
+gen c''
+gen c'''
+gen d1
+gen d2
+gen d3
+gen d4
+
+rule (a1)(b2) (a2)(b3)
+rule (a2)(b'') (a1)(b1)
+
+rule (b1)(c2) (b2)(c3)
+rule (b3)(c4) (b4)(c5)
+rule (b3)(c3) (b')(c')
+rule (b')(c'') (b'')(c1)
+
+rule (c1)(d1) (c2)(d2)
+rule (c5)(d3) (c6)(d4)
+rule (c')(d2) (c'')(d1)

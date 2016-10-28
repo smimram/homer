@@ -1,0 +1,24 @@
+order revdeglex2
+
+gen a
+gen b
+gen bb
+gen ba
+gen c
+gen cb
+gen ca
+
+rule cba bca
+rule cab bca
+rule bba bab
+rule baa aba
+rule cca cac
+rule caa aca
+rule ccb cbc
+rule cbb bcb
+rule ba (ba)
+rule cb (cb)
+rule ca (ca)
+rule bb (bb)
+
+kbc

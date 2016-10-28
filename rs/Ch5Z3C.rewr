@@ -1,0 +1,216 @@
+order revweightlex2
+gen a
+gen aa
+gen ba
+gen ca
+gen da
+gen ea
+gen b
+gen bb
+gen cb
+gen db
+gen eb
+gen c
+gen cc
+gen dc
+gen ec
+gen d
+gen dd
+gen ed
+gen e
+gen ee
+rule ba (ba)
+rule ca (ca)
+rule da (da)
+rule ea (ea)
+rule cb (cb)
+rule db (db)
+rule eb (eb)
+rule dc (dc)
+rule ec (ec)
+rule ed (ed)
+rule aa (aa)
+rule bb (bb)
+rule cc (cc)
+rule dd (dd)
+rule ee (ee)
+rule b(ca) (ca)b
+rule b(da) (da)b
+rule b(ea) (ea)b
+rule c(da) (da)c
+rule c(ea) (ea)c
+rule d(ea) (ea)d
+rule c(db) (db)c
+rule c(eb) (eb)c
+rule d(eb) (eb)d
+rule d(ec) (ec)d
+rule b(ba) (ba)b
+rule (ba)a a(ba)
+rule c(ca) (ca)c
+rule (ca)a a(ca)
+rule d(da) (da)d
+rule (da)a a(da)
+rule e(ea) (ea)e
+rule (ea)a a(ea)
+rule c(cb) (cb)c
+rule (cb)b b(cb)
+rule d(db) (db)d
+rule (db)b b(db)
+rule e(eb) (eb)e
+rule (eb)b b(eb)
+rule d(dc) (dc)d
+rule (dc)c c(dc)
+rule e(ec) (ec)e
+rule (ec)c c(ec)
+rule e(ed) (ed)e
+rule (ed)d d(ed)
+rule c(ba) (ca)b
+rule d(ba) (da)b
+rule e(ba) (ea)b
+rule d(ca) (da)c
+rule e(ca) (ea)c
+rule e(da) (ea)d
+rule d(cb) (db)c
+rule e(cb) (eb)c
+rule e(db) (eb)d
+rule e(dc) (ec)d
+rule (ee)e e(ee)
+rule (ee)d (ed)e
+rule (ee)c (ec)e
+rule (ee)b (eb)e
+rule (ee)a (ea)e
+rule (dd)d d(dd)
+rule (dd)c (dc)d
+rule (dd)b (db)d
+rule (dd)a (da)d
+rule (cc)c c(cc)
+rule (cc)b (cb)c
+rule (cc)a (ca)c
+rule (bb)b b(bb)
+rule (bb)a (ba)b
+rule (aa)a a(aa)
+rule e(dd) d(ed)
+rule (ed)c (ec)d
+rule (ed)b (eb)d
+rule (ed)a (ea)d
+rule e(cc) c(ec)
+rule (ec)b (eb)c
+rule (ec)a (ea)c
+rule d(cc) c(dc)
+rule (dc)b (db)c
+rule (dc)a (da)c
+rule e(bb) b(eb)
+rule (eb)a (ea)b
+rule d(bb) b(db)
+rule (db)a (da)b
+rule c(bb) b(cb)
+rule (cb)a (ca)b
+rule e(aa) a(ea)
+rule d(aa) a(da)
+rule c(aa) a(ca)
+rule b(aa) a(ba)
+rule (ba)(aa) (aa)(ba)
+rule (ca)(aa) (aa)(ca)
+rule (da)(aa) (aa)(da)
+rule (ea)(aa) (aa)(ea)
+rule (cb)(bb) (bb)(cb)
+rule (db)(bb) (bb)(db)
+rule (eb)(bb) (bb)(eb)
+rule (dc)(cc) (cc)(dc)
+rule (ec)(cc) (cc)(ec)
+rule (ed)(dd) (dd)(ed)
+rule (bb)(aa) (ba)(ba)
+rule (bb)(ba) (ba)(bb)
+rule (cc)(aa) (ca)(ca)
+rule (cc)(bb) (cb)(cb)
+rule (cc)(cb) (cb)(cc)
+rule (cc)(ca) (ca)(cc)
+rule (dd)(aa) (da)(da)
+rule (dd)(bb) (db)(db)
+rule (dd)(cc) (dc)(dc)
+rule (dd)(dc) (dc)(dd)
+rule (dd)(db) (db)(dd)
+rule (dd)(da) (da)(dd)
+rule (ee)(aa) (ea)(ea)
+rule (ee)(bb) (eb)(eb)
+rule (ee)(cc) (ec)(ec)
+rule (ee)(dd) (ed)(ed)
+rule (ee)(ed) (ed)(ee)
+rule (ee)(ec) (ec)(ee)
+rule (ee)(eb) (eb)(ee)
+rule (ee)(ea) (ea)(ee)
+rule (ec)(da) (ea)(dc)
+rule (ec)(db) (eb)(dc)
+rule (eb)(da) (ea)(db)
+rule (eb)(ca) (ea)(cb)
+rule (db)(ca) (da)(cb)
+rule (ed)(dc) (ec)(dd)
+rule (ed)(db) (eb)(dd)
+rule (ed)(da) (ea)(dd)
+rule (ed)(ea) (ea)(ed)
+rule (ed)(eb) (eb)(ed)
+rule (ed)(ec) (ec)(ed)
+rule (ec)(cb) (eb)(cc)
+rule (ec)(ca) (ea)(cc)
+rule (ec)(ea) (ea)(ec)
+rule (ec)(eb) (eb)(ec)
+rule (dc)(cb) (db)(cc)
+rule (dc)(ca) (da)(cc)
+rule (dc)(da) (da)(dc)
+rule (dc)(db) (db)(dc)
+rule (eb)(ba) (ea)(bb)
+rule (eb)(ea) (ea)(eb)
+rule (db)(ba) (da)(bb)
+rule (db)(da) (da)(db)
+rule (cb)(ba) (ca)(bb)
+rule (cb)(ca) (ca)(cb)
+rule (ec)(dc) (dc)(ec)
+rule (eb)(db) (db)(eb)
+rule (eb)(cb) (cb)(eb)
+rule (db)(cb) (cb)(db)
+rule (ea)(da) (da)(ea)
+rule (ea)(ca) (ca)(ea)
+rule (da)(ca) (ca)(da)
+rule (ea)(ba) (ba)(ea)
+rule (da)(ba) (ba)(da)
+rule (ca)(ba) (ba)(ca)
+rule (ee)(dc) (ec)(ed)
+rule (ee)(db) (eb)(ed)
+rule (ee)(cb) (eb)(ec)
+rule (ee)(da) (ea)(ed)
+rule (ee)(ca) (ea)(ec)
+rule (ee)(ba) (ea)(eb)
+rule (dd)(cb) (db)(dc)
+rule (dd)(ca) (da)(dc)
+rule (dd)(ba) (da)(db)
+rule (dd)(ec) (ec)(dd)
+rule (dd)(eb) (eb)(dd)
+rule (dd)(ea) (ea)(dd)
+rule (cc)(ba) (ca)(cb)
+rule (cc)(eb) (eb)(cc)
+rule (cc)(db) (db)(cc)
+rule (cc)(ea) (ea)(cc)
+rule (cc)(da) (da)(cc)
+rule (bb)(ea) (ea)(bb)
+rule (bb)(da) (da)(bb)
+rule (bb)(ca) (ca)(bb)
+rule (ed)(cb) (eb)(dc)
+rule (ed)(ca) (ea)(dc)
+rule (ed)(ba) (ea)(db)
+rule (ec)(ba) (ea)(cb)
+rule (dc)(ba) (da)(cb)
+rule (dc)(eb) (eb)(dc)
+rule (dc)(ea) (ea)(dc)
+rule (db)(ea) (ea)(db)
+rule (cb)(ea) (ea)(cb)
+rule (cb)(da) (da)(cb)
+rule (cb)(aa) (ba)(ca)
+rule (db)(aa) (ba)(da)
+rule (eb)(aa) (ba)(ea)
+rule (dc)(aa) (ca)(da)
+rule (dc)(bb) (cb)(db)
+rule (ec)(aa) (ca)(ea)
+rule (ec)(bb) (cb)(eb)
+rule (ed)(aa) (da)(ea)
+rule (ed)(bb) (db)(eb)
+rule (ed)(cc) (dc)(ec)

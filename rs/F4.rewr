@@ -1,0 +1,11 @@
+order revdeglex
+gen s
+gen t
+gen u
+gen v
+rule sts tst
+rule tutu utut
+rule uvu vuv
+rule su us
+rule sv vs
+rule tv vt

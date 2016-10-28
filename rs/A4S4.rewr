@@ -1,0 +1,62 @@
+# S4
+gen s t u
+rule tst sts
+rule utu tut
+rule us su
+rule ss 1
+rule tt 1
+rule uu 1
+
+# New generators
+gen a b
+rule ts a
+rule us b
+
+# Completion
+rule as t
+rule ta s
+
+rule bs u
+rule sb u
+rule ub s
+rule bu s
+rule su b
+
+rule tb au
+rule tu ab
+rule st aa
+rule sa at
+
+rule aat s
+
+rule uat ba
+rule uaa bt
+rule bat ua
+rule baa ut
+
+rule uau aba
+rule utb tua
+rule uab abt
+
+rule abau ua
+rule uaba au
+
+rule tuab ut
+rule abtu ut
+
+rule aaua bau
+rule babt aau
+rule aaut bab
+
+rule baut aaba
+rule baua aabt
+
+rule atuab aut
+
+rule bb 1
+rule aaa 1
+rule baba aab
+rule abab baa
+rule aabab abaa
+
+nccp

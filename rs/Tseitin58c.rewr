@@ -1,0 +1,158 @@
+order revdeglex2
+
+gen e
+
+gen a
+gen b
+gen c
+gen d
+
+## alpha yx -> xy / choix a,b > c,d
+rule ac ca
+rule ad da
+rule bc cb
+rule bd db
+
+## gamma ecva -> cev
+rule eca ce
+rule ecca cec
+rule ecda ced
+rule eccca cecc
+rule eccda cecd
+rule ecdca cedc
+rule ecdda cedd
+rule ecccca ceccc
+rule ecccda ceccd
+rule eccdca cecdc
+rule eccdda cecdd
+rule ecdcca cedcc
+rule ecdcda cedcd
+rule ecddca ceddc
+rule ecddda ceddd
+
+## delta edvb -> dev
+rule edb de
+rule edcb dec
+rule eddb ded
+rule edccb decc
+rule edcdb decd
+rule eddcb dedc
+rule edddb dedd
+rule edcccb deccc
+rule edccdb deccd
+rule edcdcb decdc
+rule edcddb decdd
+rule eddccb dedcc
+rule eddcdb dedcd
+rule edddcb deddc
+rule eddddb deddd
+
+## epsilon ccuae -> ccua
+rule ccae cca
+rule ccaae ccaa
+rule ccbae ccba
+rule ccaaae ccaaa
+rule ccabae ccaba
+rule ccbaae ccbaa
+rule ccbbae ccbba
+
+## phi cccvuaa -> cccvua
+rule cccaa ccca
+rule cccaaa cccaa
+rule cccbaa cccba
+rule ccccaa cccca
+rule cccdaa cccda
+
+## psi ccdvuab -> ccduaev / choix 1
+# rule ccdab ccdae
+# rule ccdaab ccdaae
+# rule ccdbab ccdbae
+# rule ccdcab ccdaec
+# rule ccddab ccdaed
+
+## psi ccduae -> ccduab / choix 2
+rule ccdae ccdab
+rule ccdaae ccdaab
+rule ccdbae ccdbab
+
+## nv1 cuece -> cuec
+# rule cece cec
+# rule caece caec
+# rule cbece cbec
+# rule caaece caaec
+# rule cabece cabec
+# rule cbaece cbaec
+# rule cbbece cbbec
+
+## nv2 ccuec -> cccue / choix 1
+# rule ccec ccce
+# rule ccaec cccae
+# rule ccbec cccbe
+# rule ccaaec cccaae
+# rule ccabec cccabe
+# rule ccbaec cccbae
+# rule ccbbec cccbbe
+
+## nv2 ccuec -> cuecc / choix 2
+# rule ccec cecc
+# rule ccaec caecc
+# rule ccbec cbecc
+# rule ccaaec caaecc
+# rule ccabec cabecc
+# rule ccbaec cbaecc
+# rule ccbbec cbbecc
+
+## nv3 cuecc -> cccue / choix 1
+# rule cecc ccce
+# rule caecc cccae
+# rule cbecc cccbe
+# rule caaecc cccaae
+# rule cabecc cccabe
+# rule cbaecc cccbae
+# rule cbbecc cccbbe
+
+## nv3 cccue -> cuecc / choix 2
+# rule ccce cecc
+# rule cccae caecc
+# rule cccbe cbecc
+# rule cccaae caaecc
+# rule cccabe cabecc
+# rule cccbae cbaecc
+# rule cccbbe cbbecc
+
+## nv4 ccueve -> ccvue
+# rule ccee cce
+# rule ccaee ccae
+# rule ccbee ccbe
+# rule ccece ccce
+# rule ccede ccde
+# rule ccaaee ccaae
+# rule ccabee ccabe
+# rule ccbaee ccbae
+# rule ccbbee ccbbe
+# rule ccaece cccae
+# rule ccaede ccdae
+# rule ccbece cccbe
+# rule ccbede ccdbe
+# rule ccecce cccce
+# rule ccecde cccde
+# rule ccedce ccdce
+# rule ccedde ccdde
+
+## nv5 cueece -> cueec
+# rule ceece ceec
+# rule caeece caeec
+# rule cbeece cbeec
+
+## nv6 cccueva -> cccuev
+# rule cccea ccce
+# rule cccaea cccae
+# rule cccbea cccbe
+# rule ccceca cccec
+# rule ccceda ccced
+
+## nv7 cueecc -> cccue
+# rule ceecc ccce
+# rule caeecc cccae
+# rule cbeecc cccbe
+

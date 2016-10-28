@@ -1,0 +1,7 @@
+order revweightlex
+gen a b c
+rule bababa ababab
+rule cbcbc bcbcb
+rule caca acac
+rgen ababa babab ababab aca cac acac  baba ca ba bcbc cbcb bcbcb abab bab aba cbc ab bc ac bcb cb cababab bacac abcbcb
+canonize

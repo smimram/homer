@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>REWR</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="rewr.css"/>
+    <script type="text/javascript" src="rewr.js"></script>
+  </head>
+  <body>
+    <h1>REWR</h1>
+    <div id="toplevel"></div>
+
+    <script type="text/javascript">
+      function ku(event) {
+      if (event.keyCode == 13)
+      document.getElementById("send").click();
+      }
+      function init() {
+      document.getElementById("input").onkeyup = ku;
+      }
+    </script>
+
+    <h2>Example session</h2>
+    <p>
+      <em>Create generators</em><br/>
+      <tt># gen s</tt><br/>
+      <tt># gen t</tt><br/>
+      <tt># gen u</tt><br/>
+      <em>Create rules</em></br>
+      <tt># rule tst sts</tt><br/>
+      <tt># rule ts u</tt><br/>
+      <em>Knuth-Bendix completion</em><br/>
+      <tt># kbc</tt><br/>
+      <em>See the available commands</em><br/>
+      <tt># help</tt>
+    </p>
+
+    <h2>Parity complexes</h2>
+    <p>
+      <em>Use the "parity complex" mode</em><br/>
+      <tt># mode parity</tt><br/>
+      <em>Generate a tensor product of disks</em><br/>
+      <tt># disk 2 3</tt><br/>
+      <em>Display the resulting signature</em><br/>
+      <tt># sig</tt><br/>
+      <em>Display the signature with categorical sources and targets</em><br/>
+      <tt># sigcat</tt><br/>
+      <em>Signatures can also be built by hand</em><br/>
+      <tt># empty</tt><br/>
+      <tt># gen a</tt><br/>
+      <tt># gen b</tt><br/>
+      <tt># gen c</tt><br/>
+      <tt># gen d</tt><br/>
+      <tt># gen f : a -> c</tt><br/>
+      <tt># gen g1 : a -> b</tt><br/>
+      <tt># gen g2 : b -> c</tt><br/>
+      <tt># gen g3 : c -> d</tt><br/>
+      <tt># gen h : b -> d</tt><br/>
+      <tt># gen p : f -> g1,g2</tt><br/>
+      <tt># gen q : g2,g3 -> h</tt><br/>
+      <tt># sig</tt><br/>
+      <tt># sigcat</tt><br/>
+      <tt># cell</tt><br/>
+    </p>
+  </body>
+</html>

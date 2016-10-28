@@ -1,0 +1,61 @@
+order revweightlex
+gen s
+gen t
+gen S
+gen T
+gen st
+gen ts
+gen sT
+gen tS
+gen St
+gen Ts
+gen ST
+gen TS
+gen sts
+gen stS
+gen Sts
+gen sTS
+gen STs
+gen STS
+rule Ss ""
+rule sS ""
+rule Tt ""
+rule tT ""
+rule (TS)(st) ""
+rule (st)(TS) ""
+rule (ST)(ts) ""
+rule (ts)(ST) ""
+rule (STS)(sts) ""
+rule (sts)(STS) ""
+rule st (st)
+rule ts (ts)
+rule s(ts) (sts)
+rule t(st) (sts)
+rule (st)s (sts)
+rule (ts)t (sts)
+rule s(sts) (sts)t
+rule t(sts) (sts)s
+rule (st)(st) (sts)t
+rule (ts)(ts) (sts)s
+rule (st)(sts) (sts)(ts)
+rule (ts)(sts) (sts)(st)
+rule ST (ST)
+rule TS (TS)
+rule S(TS) (STS)
+rule T(ST) (STS)
+rule (ST)S (STS)
+rule (TS)T (STS)
+rule S(STS) (STS)T
+rule T(STS) (STS)S
+rule (ST)(ST) (STS)T
+rule (TS)(TS) (STS)S
+rule (ST)(STS) (STS)(TS)
+rule (TS)(STS) (STS)(ST)
+rule sT (sT)
+rule St (St)
+rule tS (tS)
+rule Ts (Ts)
+rule Sts (Sts)
+rule STs (STs)
+rule sTS (sTS)
+rule stS (stS)

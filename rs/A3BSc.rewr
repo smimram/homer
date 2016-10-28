@@ -1,0 +1,54 @@
+order revweightlex
+gen s
+gen t
+gen u
+gen sts
+gen tut
+gen su
+gen stsuts
+rule sts (sts)
+rule tst (sts)
+rule tut (tut)
+rule utu (tut)
+rule su (su)
+rule us (su)
+rule (sts)uts (stsuts)
+rule u(su) (su)u
+rule u(sts) (su)ts
+rule s(su) (su)s
+rule s(tut) (su)tu
+rule ut(su) (tut)s
+rule u(tut) (tut)t
+rule t(tut) (tut)u
+rule t(su)ts (tut)st
+rule t(su)tu (sts)ut
+rule t(sts) (sts)s
+rule st(su) (sts)u
+rule s(sts) (sts)t
+rule (su)t(su)t (stsuts)
+rule t(su)t(su) (stsuts)
+rule t(su)(tut) (sts)utt
+rule (tut)(sts)u (stsuts)s
+rule (tut)stu (stsuts)
+rule t(su)(sts) (tut)stt
+rule (sts)(tut)(sts) (stsuts)uts
+rule (sts)(stsuts) (stsuts)(tut)
+rule (tut)(stsuts) (stsuts)(sts)
+rule (sts)(su)t(su) (stsuts)tu
+rule (sts)(su)ts (stsuts)t
+rule (tut)(sts)(su) (stsuts)ss
+rule (tut)(sts)(tut) (stsuts)stu
+rule (su)(stsuts) (stsuts)(su)
+rule (su)(sts)ut (stsuts)u
+rule (su)(tut)st (stsuts)s
+rule (sts)(tut)s (stsuts)u
+rule (sts)(tut)(su) (stsuts)uu
+rule (su)(tut)(sts) (stsuts)ss
+rule (tut)(su)t(su) (stsuts)ts
+rule (su)(sts)(tut) (stsuts)uu
+rule (sts)(su)(sts) (stsuts)tt
+rule s(stsuts) (stsuts)u
+rule t(stsuts) (stsuts)t
+rule u(stsuts) (stsuts)s
+rule (tut)(su)tu (stsuts)t
+rule (tut)(su)(tut) (stsuts)tt

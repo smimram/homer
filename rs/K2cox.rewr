@@ -1,0 +1,7 @@
+order deglex
+gen a
+gen b
+rule aa a
+rule bb b
+rule abab bab
+rule baba bab

@@ -1,0 +1,55 @@
+order revweightlex
+gen s
+gen t
+gen u
+gen st
+gen su
+gen tu
+gen stu
+rule st (st)
+rule su (su)
+rule tu (tu)
+rule us (su)
+rule (st)u (stu)
+rule t(st) (st)s
+rule u(tu) (tu)t
+rule u(su) (su)u
+rule u(st) (su)t
+rule t(su) (tu)s
+rule s(tu) (stu)
+rule s(su) (su)s
+rule (st)(su) (stu)s
+rule t(stu) (stu)s
+rule t(tu)t (tu)(tu)
+rule (su)(tu) (stu)t
+rule s(st)s (st)(st)
+rule (st)(tu)t (stu)(tu)
+rule u(stu) (stu)t
+rule (tu)(stu) (stu)(st)
+rule t(tu)(tu) (tu)(tu)u
+rule s(stu)t (su)(stu)
+rule s(stu)s (st)(stu)
+rule s(st)(st) (st)(st)t
+rule (st)(stu)t (stu)(stu)
+rule (st)(tu)(tu) (stu)(tu)u
+rule t(tu)(st)s (tu)(tu)(st)
+rule s(st)(stu) (st)(st)(tu)
+rule (st)(tu)(st)s (stu)(tu)(st)
+rule (st)(stu)(st)s (stu)(stu)(st)
+rule s(stu)(tu) (su)(stu)u
+rule s(stu)(su) (st)(stu)u
+rule s(stu)(st) (stu)(stu)
+rule (su)(stu)(st) (stu)(stu)s
+rule (st)(stu)(tu) (stu)(stu)u
+rule t(tu)(st)(st) (tu)(tu)(st)t
+rule s(stu)(stu) (stu)(stu)u
+rule (st)(tu)(st)(st) (stu)(tu)(st)t
+rule t(tu)(st)(stu) (tu)(tu)(st)(tu)
+rule (su)(stu)(stu) (stu)(stu)(su)
+rule (st)(stu)(stu)s (stu)(stu)(stu)
+rule (st)(stu)(st)(st) (stu)(stu)(st)t
+rule (st)(tu)(st)(stu) (stu)(tu)(st)(tu)
+rule (st)(stu)(st)(stu) (stu)(stu)(st)(tu)
+rule (st)(stu)(stu)(su) (stu)(stu)(stu)u
+rule (st)(stu)(stu)(st) (stu)(stu)(stu)t
+rule (st)(stu)(stu)(stu) (stu)(stu)(stu)(tu)

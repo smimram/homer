@@ -1,0 +1,20 @@
+order deglex
+gen 1
+gen 2
+gen 3
+gen 4
+gen 5
+rule 11 ""
+rule 22 ""
+rule 33 ""
+rule 44 ""
+rule 55 ""
+rule 212 121
+rule 323 232
+rule 434 343
+rule 535 353
+rule 31 13
+rule 41 14
+rule 51 15
+rule 42 24
+rule 52 25

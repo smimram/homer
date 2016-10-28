@@ -1,0 +1,7 @@
+order deglex
+gen s
+gen t
+gen u
+rule tsts stst
+rule utu tut
+rule us su

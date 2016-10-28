@@ -1,0 +1,25 @@
+gen s
+gen t
+gen ss
+gen st
+gen ts
+gen tt
+gen sss
+gen sst
+gen sts
+gen stt
+gen tss
+gen tts
+gen ttt
+rule ss (ss)
+rule st (st)
+rule ts (ts)
+rule tt (tt)
+rule (ss)s (sss)
+rule (ss)t (sst)
+rule (st)s (sts)
+rule t(st) (sts)
+rule (st)t (stt)
+rule t(ss) (tss)
+rule t(ts) (tts)
+rule (tt)t (ttt)

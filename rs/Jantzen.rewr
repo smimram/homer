@@ -1,0 +1,4 @@
+order deglex
+gen a
+gen b
+rule abba ""

@@ -1,0 +1,47 @@
+order revweightlex
+gen a
+gen b
+gen c
+gen ab
+gen ac
+gen ba
+gen bc
+gen cb
+gen aba
+gen bab
+gen bac
+gen bcb
+gen cbc
+gen abab
+gen abcb
+gen bcbc
+gen cbab
+gen acbab
+gen cabcb
+gen babcbc
+gen bacbab
+gen abacbab
+gen cbcabcb
+rule ab (ab)
+rule ac (ac)
+rule ba (ba)
+rule bc (bc)
+rule cb (cb)
+rule ca (ac)
+rule a(ba) (aba)
+rule b(ab) (bab)
+rule b(ac) (bac)
+rule b(cb) (bcb)
+rule c(bc) (cbc)
+rule a(bab) (abab)
+rule a(bcb) (abcb)
+rule b(cbc) (bcbc)
+rule c(bab) (cbab)
+rule (ac)(bab) (acbab)
+rule c(abcb) (cabcb)
+rule (bab)(cbc) (babcbc)
+rule (bac)(bab) (bacbab)
+rule (ab)(acbab) (abacbab)
+rule (cbc)(abcb) (cbcabcb)
+rule b(aba) (abab)
+rule c(bcb) (bcbc)

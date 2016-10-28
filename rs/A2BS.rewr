@@ -1,0 +1,5 @@
+order revweightlex
+gen s
+gen t
+rule tst sts
+rgen sts

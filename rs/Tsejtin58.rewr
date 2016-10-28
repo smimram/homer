@@ -1,0 +1,16 @@
+# Tseitin 58 : monoïde finiment présentable, non décidable (?)
+order revdeglex2
+
+gen a
+gen b
+gen c
+gen d
+gen e
+
+rule ac ca
+rule ad da
+rule bc cb
+rule bd db
+rule eca ce
+rule edb de
+rule ccae cca

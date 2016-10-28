@@ -1,0 +1,64 @@
+order revweightlex
+gen a
+gen b
+gen ab
+gen ba
+gen aba
+gen A
+gen B
+gen Ab
+gen Ba
+gen AB
+gen BA
+gen Aba
+gen Bab
+gen ABa
+gen BAb
+gen ABA
+rule ab (ab)
+rule ba (ba)
+rule a(ba) (aba)
+rule b(ab) (aba)
+rule (ab)a (aba)
+rule (ba)b (aba)
+rule (ba)(aba) (aba)(ab)
+rule (ba)(ba) (aba)a
+rule (ab)(aba) (aba)(ba)
+rule (ab)(ab) (aba)b
+rule b(aba) (aba)a
+rule a(aba) (aba)b
+rule Ab (Ab)
+rule Ba (Ba)
+rule AB (AB)
+rule BA (BA)
+rule A(ba) (Aba)
+rule B(ab) (Bab)
+rule A(Ba) (ABa)
+rule B(Ab) (BAb)
+rule (AB)A (ABA)
+rule (AB)(ABa) (ABA)(Ba)
+rule (AB)(Aba) (ABA)(ba)
+rule (AB)(AB) (ABA)B
+rule (AB)(Ab) (ABA)b
+rule B(aba) (Bab)a
+rule A(aba) (Aba)b
+rule B(ABa) (BA)(Ba)
+rule B(AB) (BA)B
+rule (BA)b (BAb)
+rule A(BAb) (ABA)b
+rule A(BA) (ABA)
+rule (AB)a (ABa)
+rule (Ba)(aba) (Bab)(ab)
+rule (Ba)(ba) (Bab)a
+rule (Ba)b (Bab)
+rule (Ab)(aba) (Aba)(ba)
+rule (Ab)(ab) (Aba)b
+rule (Ab)a (Aba)
+rule (AB)(aba) (ABa)(ba)
+rule (AB)(ab) (ABa)b
+rule (BA)(aba) (BAb)(ab)
+rule (BA)(ba) (BAb)a
+rule B(ABA) (BA)(BA)
+rule (AB)(ABA) (ABA)(BA)
+rule B(Aba) (BAb)a
+rule A(Bab) (ABa)b

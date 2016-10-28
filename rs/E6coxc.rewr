@@ -1,0 +1,57 @@
+order deglex
+gen a
+gen b
+gen c
+gen d
+gen e
+gen f
+rule aa ""
+rule bb ""
+rule cc ""
+rule dd ""
+rule ee ""
+rule ff ""
+rule dad ada
+rule cbc bcb
+rule dcd cdc
+rule ede ded
+rule fef efe
+rule ba ab
+rule ca ac
+rule ea ae
+rule fa af
+rule db bd
+rule eb be
+rule fb bf
+rule ec ce
+rule fc cf
+rule fd df
+rule dab bda
+rule dcbd cdcb
+rule edae deda
+rule edce dedc
+rule fedf efed
+rule dacda cdacd
+rule dacdc adacd
+rule dacbda cdacbd
+rule edace dedac
+rule edcbe dedcb
+rule fedaf efeda
+rule fedcf efedc
+rule edacbe dedacb
+rule dacbdcb adacbdc
+rule edacded dedacde
+rule fedacf efedac
+rule fedcbf efedcb
+rule fedacbf efedacb
+rule fedacdf efedacd
+rule edacbded dedacbde
+rule fedacbdf efedacbd
+rule fedacdefe efedacdef
+rule edacbdcedc dedacbdced
+rule edacbdcedac dedacbdceda
+rule fedacbdcf efedacbdc
+rule fedacbdefe efedacbdef
+rule fedacbdcefe efedacbdcef
+rule fedacbdcedfed efedacbdcedfe
+rule fedacbdcedafeda efedacbdcedafed

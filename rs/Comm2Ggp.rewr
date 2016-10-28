@@ -1,0 +1,20 @@
+order revdeglex2
+
+gen a
+gen b
+gen ab
+
+rule ab (ab)
+rule ba (ab)
+
+gen AB
+gen B
+gen A
+
+rule AB (AB)
+rule BA (AB)
+
+rule Aa ""
+rule aA ""
+rule Bb ""
+rule bB ""

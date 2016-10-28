@@ -1,0 +1,33 @@
+order revweightlex
+gen s
+gen t
+gen u
+gen v
+gen st
+gen su
+gen tu
+gen stu
+gen sv
+gen tv
+gen stv
+gen uv
+gen suv
+gen tuv
+gen stuv
+rule sts tst
+rule tutu utut
+rule uvu vuv
+rule su us
+rule sv vs
+rule tv vt
+rule st (st)
+rule su (su)
+rule tu (tu)
+rule stu (stu)
+rule sv (sv)
+rule tv (tv)
+rule stv (stv)
+rule uv (uv)
+rule suv (suv)
+rule tuv (tuv)
+rule stuv (stuv)

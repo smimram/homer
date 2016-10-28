@@ -1,0 +1,11 @@
+order codeglex
+gen 1
+gen 2
+gen 21
+gen *
+rule 21 (21)*
+rule 1(21) (21)1
+rule 2(21) (21)2
+rule *1 1*
+rule *2 2*
+rule *(21) (21)*

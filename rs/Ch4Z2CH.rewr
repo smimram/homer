@@ -1,0 +1,94 @@
+order revweightlex2
+gen a
+gen ba
+gen ca
+gen da
+gen b
+gen bb
+gen cb
+gen db
+gen c
+gen cc
+gen dc
+gen d
+gen *
+rule ba (ba)*
+rule ca (ca)*
+rule da (da)*
+rule cb (cb)*
+rule db (db)*
+rule dc (dc)*
+rule bb (bb)*
+rule cc (cc)*
+rule b(ca) (ca)b
+rule b(da) (da)b
+rule c(da) (da)c
+rule c(db) (db)c
+rule b(ba) (ba)b
+rule (ba)a a(ba)
+rule c(ca) (ca)c
+rule (ca)a a(ca)
+rule d(da) (da)d
+rule (da)a a(da)
+rule c(cb) (cb)c
+rule (cb)b b(cb)
+rule d(db) (db)d
+rule (db)b b(db)
+rule d(dc) (dc)d
+rule (dc)c c(dc)
+rule c(ba) (ca)b
+rule d(ba) (da)b
+rule d(ca) (da)c
+rule d(cb) (db)c
+rule (cc)c c(cc)
+rule (cc)b (cb)c
+rule (cc)a (ca)c
+rule (bb)b b(bb)
+rule (bb)a (ba)b
+rule d(cc) c(dc)
+rule (dc)b (db)c
+rule (dc)a (da)c
+rule d(bb) b(db)
+rule (db)a (da)b
+rule c(bb) b(cb)
+rule (cb)a (ca)b
+rule (cb)(bb) (bb)(cb)
+rule (db)(bb) (bb)(db)
+rule (dc)(cc) (cc)(dc)
+rule (bb)(ba) (ba)(bb)
+rule (cc)(bb) (cb)(cb)
+rule (cc)(cb) (cb)(cc)
+rule (cc)(ca) (ca)(cc)
+rule (db)(ca) (da)(cb)
+rule (dc)(cb) (db)(cc)
+rule (dc)(ca) (da)(cc)
+rule (dc)(da) (da)(dc)
+rule (dc)(db) (db)(dc)
+rule (db)(ba) (da)(bb)
+rule (db)(da) (da)(db)
+rule (cb)(ba) (ca)(bb)
+rule (cb)(ca) (ca)(cb)
+rule (db)(cb) (cb)(db)
+rule (da)(ca) (ca)(da)
+rule (da)(ba) (ba)(da)
+rule (ca)(ba) (ba)(ca)
+rule (cc)(ba) (ca)(cb)
+rule (cc)(db) (db)(cc)
+rule (cc)(da) (da)(cc)
+rule (bb)(da) (da)(bb)
+rule (bb)(ca) (ca)(bb)
+rule (dc)(ba) (da)(cb)
+rule (cb)(da) (da)(cb)
+rule (dc)(bb) (cb)(db)
+rule *a a*
+rule *(ba) (ba)*
+rule *(ca) (ca)*
+rule *(da) (da)*
+rule *b b*
+rule *(bb) (bb)*
+rule *(cb) (cb)*
+rule *(db) (db)*
+rule *c c*
+rule *(cc) (cc)*
+rule *(dc) (dc)*
+rule *d d*

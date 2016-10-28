@@ -1,0 +1,37 @@
+order deglex
+gen x
+gen y
+gen z
+gen xx
+gen xxz
+gen xxzx
+gen xxzxy
+gen xxzxyz
+gen xz
+gen xzx
+gen xzxy
+gen xzxyz
+gen zx
+gen zxy
+gen zxyz
+gen xy
+gen xyz
+gen yz
+rule yzxx xzxy
+rule zxyzx yzxxz
+rule zxyzx xzxyz
+rule xx (xx)
+rule xxz (xxz)
+rule xxzx (xxzx)
+rule xxzxy (xxzxy)
+rule xxzxyz (xxzxyz)
+rule xz (xz)
+rule xzx (xzx)
+rule xzxy (xzxy)
+rule xzxyz (xzxyz)
+rule zx (zx)
+rule zxy (zxy)
+rule zxyz (zxyz)
+rule xy (xy)
+rule xyz (xyz)
+rule yz (yz)

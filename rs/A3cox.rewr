@@ -1,0 +1,10 @@
+order deglex
+gen s
+gen t
+gen u
+rule ss ""
+rule tt ""
+rule uu ""
+rule tst sts
+rule us su
+rule utu tut

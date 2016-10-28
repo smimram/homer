@@ -1,0 +1,13 @@
+order deglex
+gen a
+gen b
+gen bb
+gen aa
+rule bb (bb)
+rule (bb)a a(bb)
+rule (bb)b b(bb)
+rule aa (aa)
+rule (aa)(bb) ""
+rule (aa)b b(aa)
+rule (bb)(aa) ""
+rule (aa)a a(aa)

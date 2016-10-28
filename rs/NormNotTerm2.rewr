@@ -1,0 +1,14 @@
+order deglex
+gen a
+gen b
+gen b'
+gen b''
+gen c
+gen c'
+gen c''
+gen d
+rule cd (c')d
+rule b(c') (b')(c'')
+rule a(b') a(b'')
+rule (b'')(c'') bc
+rule (c'')d dd

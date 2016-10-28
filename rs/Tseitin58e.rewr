@@ -1,0 +1,354 @@
+order revdeglex2
+
+gen e
+gen a
+gen b
+gen c
+gen d
+
+## alpha
+rule ac ca
+rule ad da
+rule bc cb
+rule bd db
+
+## gamma (-1)
+rule eca ce
+rule ecca cec
+rule ecda ced
+rule eccda cecd
+rule ecdca cedc
+rule ecdda cedd
+rule eccdca cecdc
+rule eccdda cecdd
+rule ecdcca cedcc
+rule ecdcda cedcd
+rule ecddca ceddc
+rule ecddda ceddd
+
+## delta (-1)
+rule edb de
+rule edcb dec
+rule eddb ded
+rule edccb decc
+rule edcdb decd
+rule eddcb dedc
+rule edddb dedd
+rule edcccb deccc
+rule edccdb deccd
+rule edcdcb decdc
+rule edcddb decdd
+rule eddccb dedcc
+rule eddcdb dedcd
+rule edddcb deddc
+rule eddddb deddd
+
+## epsilon (-1)
+rule ccae cca
+rule ccaae ccaa
+rule ccbae ccba
+rule ccaaae ccaaa
+rule ccabae ccaba
+rule ccbaae ccbaa
+rule ccbbae ccbba
+
+## phi (-1)
+rule cccaa ccca
+rule cccbaa cccba
+rule cccdaa cccda
+
+## psi (renversé) (0)
+rule ccdae ccdab
+rule ccdaae ccdaab
+rule ccdbae ccdbab
+
+## nouvelles (-1)
+rule ccee cce
+
+rule cece cec
+
+rule cccea ccce
+
+rule cbece cbec
+rule caecc ccca
+rule caece caec
+
+
+rule eccca ccce
+rule ecccca cccce
+rule ecccda ccced
+
+rule ccbee ccbe
+rule ccede ccde
+rule cceae ccea
+
+rule ceecc ccce
+rule ceece ceec
+
+rule cccbea cccbe
+rule ccceda ccced
+
+rule ccbbee ccbbe
+rule ccbede ccdbe
+rule ccbeae ccbea
+
+rule ccabee ccabe
+rule ccedde ccdde
+rule ccedce ccdce
+
+rule cbbece cbbec
+rule cbaecc cccba
+rule cbaece cbaec
+
+rule cbeecc cccbe
+rule cbeece cbeec
+
+rule cabece cabec
+
+rule caaece caaec
+
+rule caeece caeec
+rule cedcce cedcc
+rule cecbae cecba
+
+rule cecbee cecbe
+rule cebece cebec
+rule ceaece ceaec
+rule ceeece ceeec
+
+rule ccddabb ccddae
+rule ccdcceb ccdecc
+rule ccdcaba ccdcae
+rule cccddaa cccdda
+rule cccdcaa cccdca
+rule cccdcea cccdce
+rule cccdbaa cccdba
+rule cccdeaa cccdea
+rule cccbbaa cccbba
+rule cccbbea cccbbe
+rule cccbeda cccbed
+rule cccabaa cccaba
+rule cccabea cccabe
+rule cccedda cccedd
+rule cccedca cccedc
+rule cccebaa ccceba
+rule cccebea cccebe
+rule ccbbbae ccbbba
+rule ccbbbee ccbbbe
+rule ccbbaae ccbbaa
+rule ccbbede ccdbbe
+rule ccbbeae ccbbea
+rule ccbabae ccbaba
+
+rule ccbabee ccbabe
+rule ccbaaae ccbaaa
+rule ccbedde ccddbe
+rule ccbedce ccdcbe
+rule ccabbae ccabba
+
+rule ccabbee ccabbe
+rule ccabaae ccabaa
+rule ccabede ccdabe
+rule ccabeae ccabea
+rule ccaabae ccaaba
+rule ccaabec cccabe
+rule ccaabee ccaabe
+rule ccaaaae ccaaaa
+rule cceddde ccddde
+rule cceddce ccddce
+rule ccedcde ccdcde
+rule cbbbece cbbbec
+rule cbbaecc cccbba
+rule cbbaece cbbaec
+rule cbbeecc cccbbe
+rule cbbeece cbbeec
+rule cbabece cbabec
+rule cbaaece cbaaec
+rule cbaeece cbaeec
+rule cbedcce cbedcc
+rule cbecbae cbecba
+rule cbecbee cbecbe
+rule cbebece cbebec
+rule cbeaece cbeaec
+rule cbeeece cbeeec
+rule cabbece cabbec
+rule cabaecc cccaba
+rule cabaece cabaec
+rule cabeecc cccabe
+rule cabeece cabeec
+rule caabecc cccabe
+rule caabece caabec
+rule caaaece caaaec
+rule caaeece caaeec
+rule caedcce caedcc
+rule caecbae caecba
+rule caecbec cccabe
+rule caecbee caecbe
+rule caebecc cccabe
+rule caebece caebec
+rule caeaece caeaec
+rule caeeece caeeec
+rule cedccde cdeccd
+rule cecddbb cecdde
+rule cecdcce cecdcc
+rule cecdcba cecdce
+rule cecbede cecdbe
+rule edddddb dedddd
+rule eddddcb dedddc
+rule edddcdb deddcd
+rule edddccb deddcc
+rule eddcddb dedcdd
+rule eddcdcb dedcdc
+rule eddccdb dedccd
+rule eddcccb dedccc
+rule edcdddb decddd
+rule edcddcb decddc
+rule edcdcdb decdcd
+rule edcdccb decdcc
+rule edccddb deccdd
+rule edccdcb deccdc
+rule edcccdb decccd
+rule edccccb decccc
+rule ecdddda cedddd
+rule ecdddca cedddc
+rule ecddcda ceddcd
+rule ecddcca ceddcc
+rule ecdcdda cedcdd
+rule ecdcdca cedcdc
+rule ecdccda cedccd
+rule ecdccca cedccc
+rule eccddda cecddd
+rule eccddca cecddc
+rule eccdcda cecdcd
+rule eccdcca cecdcc
+rule ecccdda cccedd
+rule ecccdca cccedc
+rule eccccda cccced
+rule eccccca ccccce
+rule cedccca cedccc
+rule cedccce cedccc
+rule ccebae cceba
+rule ccebee ccebe
+rule cceaae cceaa
+rule ccdceba ccdcee
+rule ccbebae ccbeba
+rule ccbebee ccbebe
+rule ccbeaae ccbeaa
+rule ceddcce ceddcc
+rule cecbbae cecbba
+rule cecbbee cecbbe
+rule cecbaae cecbaa
+rule cecbeae cecbea
+rule cebbece cebbec
+rule cebaecc ccceba
+rule cebaece cebaec
+rule cebeecc cccebe
+rule cebeece cebeec
+rule ceabecc cccebe
+rule ceabece ceabec
+rule ceaaece ceaaec
+rule ceaeece ceaeec
+rule ceedcce ceedcc
+rule ceecbae ceecba
+rule ceecbec cccebe
+rule ceecbee ceecbe
+rule ceebecc cccebe
+rule ceebece ceebec
+rule ceeaece ceeaec
+rule ceeeece ceeeec
+
+
+## nouvelles (0)
+rule ccec ccce
+rule ccbec cccbe
+rule ccbbec cccbbe
+rule ccabec cccabe
+
+
+rule cecc ccce
+rule cbecc cccbe
+rule cbbecc cccbbe
+
+rule cecde cecdb
+rule cbecde cbecdb
+
+
+rule ccedae ccedab
+
+rule cabecc cccabe
+rule caecde caecdb
+rule ceecde ceecdb
+rule ccedcc ccdcce
+rule cecbec cccebe
+rule cebecc cccebe
+rule ccdbbae ccdbbab
+rule ccdbaae ccdbaab
+rule ccdabae ccdabab
+rule ccdaaae ccdaaab
+rule ccdeccd ccdccde
+rule cccdcec cccdcce
+rule ccbbbec cccbbbe
+rule ccbabec cccbabe
+rule ccbedcc ccdccbe
+rule ccbedae ccbedab
+rule ccabbec cccabbe
+rule cbbbecc cccbbbe
+rule cbbecde cbbecdb
+rule cbabecc cccbabe
+rule cbaecde cbaecdb
+rule cbecbec cccbebe
+rule cbebecc cccbebe
+rule cbeecde cbeecdb
+rule cabbecc cccabbe
+rule cabecde cabecdb
+rule caaecde caaecdb
+rule caeecde caeecdb
+rule cecdbae cecdbab
+rule cebecde cebecdb
+rule ceaecde ceaecdb
+rule ceeecde ceeecdb
+rule ccebec cccebe
+rule ccdeae ccdeab
+rule ccdceed ccdcdea
+rule ccdbeae ccdbeab
+rule ccbebec cccbebe
+rule ccedaae ccedaab
+rule cecdccc ccdccce
+rule cecbbec cccebbe
+rule cebbecc cccebbe
+rule cceddcc ccddcce
+
+
+## nouvelles (-2)
+rule caaecc ccca
+rule cbaaecc cccba
+
+rule caeecc ccca
+
+rule ceaecc ccce
+
+rule cbaeecc cccba
+rule cbeaecc cccbe
+
+rule ceeecc ccce
+rule cbeeecc cccbe
+
+rule ccebede ccdee
+
+
+## nouvelles (-3)
+rule caaaecc ccca
+rule caaeecc ccca
+rule caeaecc ccca
+rule caeeecc ccca
+
+rule ceaaecc ccce
+rule ceaeecc ccce
+rule ceeaecc ccce
+rule ceeeecc ccce
+
+
+
+
+
+

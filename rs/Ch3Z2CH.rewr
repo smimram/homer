@@ -1,0 +1,38 @@
+order revweightlex2
+gen a
+gen ba
+gen ca
+gen b
+gen bb
+gen cb
+gen c
+gen *
+rule ba (ba)*
+rule cb (cb)*
+rule ca (ca)*
+rule bb (bb)*
+rule b(ca) (ca)b
+rule b(ba) (ba)b
+rule (ba)a a(ba)
+rule c(ca) (ca)c
+rule (ca)a a(ca)
+rule c(cb) (cb)c
+rule (cb)b b(cb)
+rule c(ba) (ca)b
+rule (bb)b b(bb)
+rule (bb)a (ba)b
+rule c(bb) b(cb)
+rule (cb)a (ca)b
+rule (cb)(bb) (bb)(cb)
+rule (bb)(ba) (ba)(bb)
+rule (cb)(ba) (ca)(bb)
+rule (cb)(ca) (ca)(cb)
+rule (ca)(ba) (ba)(ca)
+rule (bb)(ca) (ca)(bb)
+rule *a a*
+rule *(ba) (ba)*
+rule *(ca) (ca)*
+rule *b b*
+rule *(bb) (bb)*
+rule *(cb) (cb)*
+rule *c c*

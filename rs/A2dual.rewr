@@ -1,0 +1,6 @@
+order deglex
+gen a
+gen b
+gen c
+rule bc ab
+rule ca ab

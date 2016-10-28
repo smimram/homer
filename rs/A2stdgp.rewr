@@ -1,0 +1,40 @@
+order deglex
+gen s
+gen t
+gen ss
+gen st
+gen ts
+gen tt
+gen sss
+gen sst
+gen sts
+gen stt
+gen tss
+gen tts
+gen ttt
+gen S
+gen T
+rule ss (ss)
+rule st (st)
+rule ts (ts)
+rule tt (tt)
+rule (ss)s (sss)
+rule (ss)t (sst)
+rule (st)t (stt)
+rule t(ss) (tss)
+rule t(ts) (tts)
+rule (tt)t (ttt)
+rule t(st) (sts)
+rule (st)s (sts)
+rule s(ss) (sss)
+rule s(st) (sst)
+rule s(ts) (sts)
+rule s(tt) (stt)
+rule (ts)s (tss)
+rule (ts)t (sts)
+rule (tt)s (tts)
+rule t(tt) (ttt)
+rule Ss ""
+rule sS ""
+rule Tt ""
+rule tT ""

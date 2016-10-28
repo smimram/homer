@@ -1,0 +1,11 @@
+order revweightlex
+gen s
+gen t
+gen u
+rule tst sts
+rule utu tut
+rule us su
+rgen sts
+rgen tut
+rgen su
+rgen stsuts

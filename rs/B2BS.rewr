@@ -1,0 +1,6 @@
+gen s
+gen t
+rule tsts stst
+rgen stst
+canonize
+order revweightlex

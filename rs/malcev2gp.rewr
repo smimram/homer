@@ -1,0 +1,55 @@
+order deglex
+gen a1
+gen a2
+gen b1
+gen b2
+gen c
+gen d
+gen x1
+gen x2
+gen y1
+gen y2
+gen u
+gen v
+gen A1
+gen A2
+gen B1
+gen B2
+gen C
+gen D
+gen X1
+gen X2
+gen Y1
+gen Y2
+gen U
+gen V
+rule (b1)(y1) (a1)(x1)
+rule (b2)(y2) (a2)(x2)
+rule d(y1) c(x1)
+rule d(y2) c(x2)
+rule (b1)v (a1)u
+rule (b2)v (a2)u
+rule (A1)(a1) ""
+rule (a1)(A1) ""
+rule (A2)(a2) ""
+rule (a2)(A2) ""
+rule (B1)(b1) ""
+rule (b1)(B1) ""
+rule (B2)(b2) ""
+rule (b2)(B2) ""
+rule Cc ""
+rule cC ""
+rule Dd ""
+rule dD ""
+rule (X1)(x1) ""
+rule (x1)(X1) ""
+rule (X2)(x2) ""
+rule (x2)(X2) ""
+rule (Y1)(y1) ""
+rule (y1)(Y1) ""
+rule (Y2)(y2) ""
+rule (y2)(Y2) ""
+rule Uu ""
+rule uU ""
+rule Vv ""
+rule vV ""

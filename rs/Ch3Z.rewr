@@ -1,0 +1,18 @@
+order revweightlex2
+gen a
+gen ba
+gen ca
+gen b
+gen cb
+gen c
+rule cba bca
+rule cab bca
+rule bba bab
+rule baa aba
+rule cca cac
+rule caa aca
+rule ccb cbc
+rule cbb bcb
+rule ba (ba)
+rule cb (cb)
+rule ca (ca)

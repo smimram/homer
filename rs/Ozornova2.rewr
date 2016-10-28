@@ -1,0 +1,20 @@
+order deglex
+gen a
+gen b1
+gen b2
+gen b3
+gen c1
+gen c2
+gen c3
+gen d
+gen f
+gen g
+gen h
+rule (b1)(c1) (b2)(c2)
+rule (c2)d (c3)d
+rule (b2)(c3) (b3)(c1)
+rule a(b3) a(b1)
+rule a(b2) f
+rule f(c2) gh
+rule f(c3) gh
+revhomogenise

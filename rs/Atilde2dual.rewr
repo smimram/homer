@@ -1,0 +1,6 @@
+order deglex2
+gen r
+gen s
+gen r*s
+rule s(r*s) rs
+rule (r*s)r rs

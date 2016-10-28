@@ -1,0 +1,14 @@
+# Exemple 1 de Squier 87
+order deglex
+
+gen a
+gen b
+gen t
+gen x
+gen y
+
+rule ab 1
+rule xa atx
+rule xt tx
+rule xb bx
+rule xy 1

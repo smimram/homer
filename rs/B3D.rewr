@@ -1,0 +1,9 @@
+order revdeglex
+gen s
+gen t
+gen u
+rule stst tsts
+rule tut utu
+rule su us
+dc
+kb

@@ -1,0 +1,225 @@
+order revweightlex
+gen a
+gen b
+gen c
+gen ab
+gen ac
+gen ba
+gen bc
+gen cb
+gen aba
+gen bab
+gen bac
+gen bcb
+gen cbc
+gen abab
+gen abcb
+gen bcbc
+gen cbab
+gen acbab
+gen cabcb
+gen babcbc
+gen bacbab
+gen abacbab
+gen cbcabcb
+rule ab (ab)
+rule ac (ac)
+rule ba (ba)
+rule bc (bc)
+rule cb (cb)
+rule ca (ac)
+rule a(ba) (aba)
+rule b(ab) (bab)
+rule b(ac) (bac)
+rule b(cb) (bcb)
+rule c(bc) (cbc)
+rule a(bab) (abab)
+rule a(bcb) (abcb)
+rule b(cbc) (bcbc)
+rule c(bab) (cbab)
+rule (ac)(bab) (acbab)
+rule c(abcb) (cabcb)
+rule (bab)(cbc) (babcbc)
+rule (bac)(bab) (bacbab)
+rule (ab)(acbab) (abacbab)
+rule (cbc)(abcb) (cbcabcb)
+rule b(aba) (abab)
+rule c(bcb) (bcbc)
+rule (cb)c (cbc)
+rule (bc)b (bcb)
+rule (bc)a (bac)
+rule (ba)c (bac)
+rule (ba)b (bab)
+rule (ab)a (aba)
+rule c(ba) (cb)a
+rule c(ac) (ac)c
+rule c(ab) (ac)b
+rule a(cb) (ac)b
+rule a(bc) (ab)c
+rule a(ac) (ac)a
+rule (cbc)b (bcbc)
+rule (bcb)c (bcbc)
+rule (bab)a (abab)
+rule (aba)b (abab)
+rule (cb)(cb) (bcbc)
+rule (cb)(ac) (cbc)a
+rule (cb)(ab) (cbab)
+rule (bc)(bc) (bcbc)
+rule (bc)(ba) (bcb)a
+rule (bc)(ac) (bac)c
+rule (bc)(ab) (bac)b
+rule (ba)(cb) (bac)b
+rule (ba)(bc) (bab)c
+rule (ba)(ba) (abab)
+rule (ba)(ac) (bac)a
+rule (ab)(cb) (abcb)
+rule (ab)(ac) (aba)c
+rule (ab)(ab) (abab)
+rule c(bac) (cbc)a
+rule c(aba) (ac)(ba)
+rule a(cbc) (ac)(bc)
+rule a(bac) (aba)c
+rule (cbc)(bc) (bcbc)c
+rule (cbc)(ba) (bcbc)a
+rule (bcb)(cb) (bcbc)b
+rule (bcb)(ac) (bcbc)a
+rule (bab)(ac) (abab)c
+rule (bab)(ab) (abab)b
+rule (aba)(bc) (abab)c
+rule (aba)(ba) (abab)a
+rule (cb)(cbc) (bcbc)c
+rule (bc)(bcb) (bcbc)b
+rule (bc)(bac) (bcbc)a
+rule (bc)(bab) (bcb)(ab)
+rule (bc)(aba) (bac)(ba)
+rule (ba)(cbc) (bac)(bc)
+rule (ba)(bcb) (bab)(cb)
+rule (ba)(bac) (abab)c
+rule (ba)(bab) (abab)b
+rule (ac)(bcb) (cabcb)
+rule (ab)(aba) (abab)a
+rule c(bcbc) (bcbc)c
+rule b(cbab) (bcb)(ab)
+rule b(bcbc) (bcbc)b
+rule b(abcb) (bab)(cb)
+rule b(abab) (abab)b
+rule a(cbab) (acbab)
+rule a(abab) (abab)a
+rule a(bcbc) (cabcb)
+rule (cbab)a (acbab)
+rule (abcb)c (cabcb)
+rule (cb)(aba) (acbab)
+rule (ab)(cbc) (cabcb)
+rule c(abab) (acbab)
+rule (cbab)(ac) (acbab)c
+rule (cbab)(ab) (acbab)b
+rule (abcb)(cb) (cabcb)b
+rule (abcb)(ac) (cabcb)a
+rule (cbc)(bcb) (bcbc)(cb)
+rule (cbc)(bac) (bcbc)(ac)
+rule (cbc)(bab) (bcbc)(ab)
+rule (bcb)(cbc) (bcbc)(bc)
+rule (bab)(aba) (abab)(ba)
+rule (aba)(bcb) (abab)(cb)
+rule (aba)(bac) (abab)(ac)
+rule (aba)(bab) (abab)(ab)
+rule (cb)(cbab) (bcbc)(ab)
+rule (cb)(bcbc) (bcbc)(cb)
+rule (cb)(abcb) (cbab)(cb)
+rule (cb)(abab) (acbab)b
+rule (bc)(bcbc) (bcbc)(bc)
+rule (ba)(cbab) (bacbab)
+rule (ba)(abab) (abab)(ba)
+rule (ac)(bcbc) (cabcb)c
+rule (ac)(abab) (acbab)a
+rule (ab)(cbab) (abcb)(ab)
+rule (ab)(bcbc) (cabcb)b
+rule (ab)(abcb) (abab)(cb)
+rule (ab)(abab) (abab)(ab)
+rule c(cabcb) (cabcb)c
+rule c(acbab) (ac)(cbab)
+rule b(acbab) (bacbab)
+rule a(cabcb) (ac)(abcb)
+rule a(acbab) (acbab)a
+rule (bcb)(aba) (bacbab)
+rule (bac)(bcb) (babcbc)
+rule (bc)(abcb) (babcbc)
+rule (bc)(abab) (bacbab)
+rule (ba)(bcbc) (babcbc)
+rule b(cabcb) (babcbc)
+rule (cbab)(aba) (acbab)(ba)
+rule (abcb)(cbc) (cabcb)(bc)
+rule (abcb)(aba) (abacbab)
+rule (cbc)(bcbc) (bcbc)(cbc)
+rule (cbc)(abab) (bcbc)(aba)
+rule (bcb)(cbab) (bcbc)(bab)
+rule (bcb)(bcbc) (bcbc)(bcb)
+rule (bcb)(abab) (bacbab)b
+rule (bac)(bcbc) (babcbc)c
+rule (bac)(abab) (bacbab)a
+rule (bab)(bcbc) (babcbc)b
+rule (bab)(abcb) (abab)(bcb)
+rule (bab)(abab) (abab)(bab)
+rule (aba)(cbab) (abacbab)
+rule (aba)(bcbc) (abab)(cbc)
+rule (aba)(abab) (abab)(aba)
+rule (cb)(cabcb) (cbcabcb)
+rule (cb)(acbab) (bcbc)(aba)
+rule (bc)(cabcb) (babcbc)c
+rule (bc)(acbab) (bac)(cbab)
+rule (ba)(cabcb) (bac)(abcb)
+rule (ba)(acbab) (bacbab)a
+rule (ab)(cabcb) (abab)(cbc)
+rule c(bacbab) (bcbc)(aba)
+rule a(bacbab) (abacbab)
+rule a(babcbc) (abab)(cbc)
+rule (cbab)(cbc) (cbcabcb)
+rule c(babcbc) (cbcabcb)
+rule (cbab)(bcbc) (cbcabcb)b
+rule (cbab)(abcb) (acbab)(bcb)
+rule (cbab)(abab) (acbab)(bab)
+rule (abcb)(cbab) (cabcb)(bab)
+rule (abcb)(bcbc) (cabcb)(bcb)
+rule (abcb)(abab) (abacbab)b
+rule (cbc)(cabcb) (cbcabcb)c
+rule (bcb)(cabcb) (bcbc)(abcb)
+rule (bcb)(acbab) (bcbc)(abab)
+rule (bab)(cabcb) (abab)(bcbc)
+rule (bab)(acbab) (abab)(cbab)
+rule (aba)(acbab) (abacbab)a
+rule (bc)(bacbab) (bcbc)(abab)
+rule (bc)(babcbc) (bcbc)(abcb)
+rule (ba)(bacbab) (abab)(cbab)
+rule (ba)(babcbc) (abab)(bcbc)
+rule (ac)(bacbab) (cabcb)(aba)
+rule (ac)(babcbc) (acbab)(cbc)
+rule c(abacbab) (cabcb)(aba)
+rule b(cbcabcb) (bcbc)(abcb)
+rule b(abacbab) (abab)(cbab)
+rule a(cbcabcb) (acbab)(cbc)
+rule (cbab)(cabcb) (acbab)(bcbc)
+rule (cbab)(acbab) (acbab)(cbab)
+rule (abcb)(cabcb) (cabcb)(abcb)
+rule (abcb)(acbab) (cabcb)(abab)
+rule (cbc)(bacbab) (bcbc)(acbab)
+rule (cbc)(babcbc) (bcbc)(cabcb)
+rule (bac)(bacbab) (babcbc)(aba)
+rule (bac)(babcbc) (bacbab)(cbc)
+rule (aba)(bacbab) (abab)(acbab)
+rule (aba)(babcbc) (abab)(cabcb)
+rule (cb)(cbcabcb) (bcbc)(cabcb)
+rule (cb)(abacbab) (acbab)(cbab)
+rule (bc)(abacbab) (babcbc)(aba)
+rule (ba)(cbcabcb) (bacbab)(cbc)
+rule (ab)(cbcabcb) (cabcb)(abcb)
+rule (ab)(abacbab) (abab)(acbab)
+rule (cbc)(abacbab) (cbcabcb)(aba)
+rule (bcb)(cbcabcb) (bcbc)(babcbc)
+rule (bcb)(abacbab) (bacbab)(cbab)
+rule (bab)(cbcabcb) (babcbc)(abcb)
+rule (bab)(abacbab) (abab)(bacbab)
+rule (aba)(cbcabcb) (abacbab)(cbc)
+rule (cbab)(cbcabcb) (cbcabcb)(abcb)
+rule (cbab)(abacbab) (acbab)(bacbab)
+rule (abcb)(cbcabcb) (cabcb)(babcbc)
+rule (abcb)(abacbab) (abacbab)(cbab)

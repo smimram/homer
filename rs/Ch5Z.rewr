@@ -1,0 +1,66 @@
+order revweightlex2
+gen a
+gen ba
+gen ca
+gen da
+gen ea
+gen b
+gen cb
+gen db
+gen eb
+gen c
+gen dc
+gen ec
+gen d
+gen ed
+gen e
+rule cba bca
+rule cab bca
+rule dba bda
+rule dab bda
+rule eba bea
+rule eab bea
+rule dca cda
+rule dac cda
+rule eca cea
+rule eac cea
+rule eda dea
+rule ead dea
+rule dcb cdb
+rule dbc cdb
+rule ecb ceb
+rule ebc ceb
+rule edb deb
+rule ebd deb
+rule edc dec
+rule ecd dec
+rule bba bab
+rule baa aba
+rule cca cac
+rule caa aca
+rule dda dad
+rule daa ada
+rule eea eae
+rule eaa aea
+rule ccb cbc
+rule cbb bcb
+rule ddb dbd
+rule dbb bdb
+rule eeb ebe
+rule ebb beb
+rule ddc dcd
+rule dcc cdc
+rule eec ece
+rule ecc cec
+rule eed ede
+rule edd ded
+rule ba (ba)
+rule ca (ca)
+rule da (da)
+rule ea (ea)
+rule cb (cb)
+rule db (db)
+rule eb (eb)
+rule dc (dc)
+rule ec (ec)
+rule ed (ed)

@@ -1,0 +1,6 @@
+order deglex
+gen s
+gen t
+rule ss ""
+rule tt ""
+rule tst sts

@@ -1,0 +1,93 @@
+order revdeglex2
+gen r
+gen s
+gen t
+gen rs
+gen rt
+gen sr
+gen st
+gen tr
+gen ts
+gen rsr
+gen rst
+gen rtr
+gen rts
+gen srs
+gen srt
+gen str
+gen sts
+gen trs
+gen tsr
+rule rs (rs)
+rule rt (rt)
+rule sr (sr)
+rule st (st)
+rule tr (tr)
+rule ts (ts)
+rule (rs)t (rst)
+rule (rt)s (rts)
+rule s(rt) (srt)
+rule (st)r (str)
+rule t(rs) (trs)
+rule t(sr) (tsr)
+rule (srs) (rsr)
+rule t(rt) (rtr)
+rule t(st) (sts)
+rule s(rs) (rsr)
+rule (rs)r (rsr)
+rule (st)s (sts)
+rule (rt)r (rtr)
+rule (rt)(rt) (rtr)t
+rule (rt)(rs) (rtr)s
+rule (st)(rsr) (sts)(rs)
+rule (st)(srt) (sts)(rt)
+rule (st)(st) (sts)t
+rule (st)(sr) (sts)r
+rule (rs)(rt) (rsr)t
+rule (rs)(rs) (rsr)s
+rule s(rsr) (rsr)r
+rule s(rst) (rsr)t
+rule t(sts) (sts)s
+rule t(str) (sts)r
+rule t(rtr) (rtr)r
+rule t(rts) (rtr)s
+rule t(rsr) (trs)r
+rule t(rst) (trs)t
+rule (st)(rt) (str)t
+rule (st)(rs) (str)s
+rule s(rts) (srt)s
+rule (rt)(rsr) (rts)(rs)
+rule (rt)(srt) (rts)(rt)
+rule (rt)(st) (rts)t
+rule (rt)(sr) (rts)r
+rule (rs)(sts) (rst)(st)
+rule (rs)(rtr) (rst)(rt)
+rule (rs)(tsr) (rst)(sr)
+rule (rs)(trs) (rst)(rs)
+rule (rs)(ts) (rst)s
+rule (rs)(tr) (rst)r
+rule (ts)(rs) (trs)r
+rule t(srt) (ts)(rt)
+rule (ts)t (sts)
+rule (ts)r (tsr)
+rule (tr)t (rtr)
+rule (tr)s (trs)
+rule s(sts) (sts)t
+rule (srt)r (str)t
+rule s(tsr) (sts)r
+rule s(trs) (str)s
+rule s(ts) (sts)
+rule s(tr) (str)
+rule (sr)t (srt)
+rule (sr)s (rsr)
+rule r(sts) (rts)t
+rule r(rtr) (rtr)t
+rule r(tsr) (rts)r
+rule r(trs) (rtr)s
+rule r(ts) (rts)
+rule r(tr) (rtr)
+rule r(rsr) (rsr)s
+rule r(srt) (rsr)t
+rule r(st) (rst)
+rule r(sr) (rsr)
+rule s(rtr) (str)t

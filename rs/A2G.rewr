@@ -1,0 +1,12 @@
+order revweightlex
+gen a
+gen b
+gen ab
+gen ba
+gen aba
+rule ab (ab)
+rule ba (ba)
+rule a(ba) (aba)
+rule b(ab) (aba)
+rule (ab)a (aba)
+rule (ba)b (aba)

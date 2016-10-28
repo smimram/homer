@@ -1,0 +1,98 @@
+order revdeglex2
+gen r
+gen s
+gen t
+gen r*s
+gen s*t
+gen r*st
+gen rs
+gen st
+gen rt
+gen r[s*t]
+gen [r*s]t
+gen s[r*st]
+gen rst
+rule rs (rs)
+rule st (st)
+rule rt (rt)
+rule r(s*t) (r[s*t])
+rule (r*s)t ([r*s]t)
+rule s(r*st) (s[r*st])
+rule s(r*s) (rs)
+rule (r*s)r (rs)
+rule (s*t)(r*st) (r[s*t])
+rule (r*st)r (r[s*t])
+rule t(s*t) (st)
+rule (s*t)s (st)
+rule t(r*st) ([r*s]t)
+rule (r*st)(r*s) ([r*s]t)
+rule tr (rt)
+rule (r*st)s (s[r*st])
+rule (rs)t (rst)
+rule (rs)(rt) (rst)r
+rule (rs)([r*s]t) (rst)(r*st)
+rule (rs)(st) (rst)(s*t)
+rule (r*st)(s[r*st]) (s[r*st])(r*st)
+rule (r*st)(st) (s[r*st])t
+rule t(rt) (rt)t
+rule t(rs) (rt)s
+rule (r*st)([r*s]t) ([r*s]t)t
+rule t(s[r*st]) ([r*s]t)s
+rule t([r*s]t) ([r*s]t)(r*s)
+rule (s*t)(rs) (st)(r*s)
+rule (s*t)(st) (st)t
+rule t(st) (st)s
+rule (r*st)(r[s*t]) (r[s*t])(s*t)
+rule (r*st)(rt) (r[s*t])t
+rule (s*t)([r*s]t) (r[s*t])(r*s)
+rule (s*t)(r[s*t]) (r[s*t])r
+rule (r*s)(r[s*t]) (rs)(s*t)
+rule (r*s)(rt) (rst)
+rule (r*s)(rs) (rs)s
+rule s(rs) (rs)r
+rule s([r*s]t) (rst)
+rule s(s[r*st]) (s[r*st])s
+rule (s[r*st])(r*s) (rst)
+rule s(r[s*t]) (s[r*st])r
+rule (r*s)([r*s]t) ([r*s]t)(r*st)
+rule (r*s)(st) ([r*s]t)(s*t)
+rule r(st) (rst)
+rule r(r[s*t]) (r[s*t])(r*st)
+rule r(rt) (rt)r
+rule r([r*s]t) (rt)(r*st)
+rule s(rt) (st)r
+rule s(st) (st)(s*t)
+rule r(rs) (rs)(r*s)
+rule r(s[r*st]) (rs)(r*st)
+rule (r*st)(rs) (rst)
+rule t(r[s*t]) (rst)
+rule ([r*s]t)r (rst)
+rule (rt)(s*t) (rst)
+rule (s*t)(s[r*st]) (rst)
+rule (st)(r*st) (rst)
+rule (r[s*t])s (rst)
+rule (r[s*t])(rst) (rst)([r*s]t)
+rule (r[s*t])(rs) (rst)(r*s)
+rule (r[s*t])(s[r*st]) (rst)(r*st)
+rule (r[s*t])(st) (rst)t
+rule (st)(rst) (rst)(rs)
+rule (st)(s[r*st]) (rst)s
+rule (st)([r*s]t) (rst)(r*s)
+rule (st)(r[s*t]) (rst)r
+rule (s*t)(rst) (rst)(r*s)
+rule (rt)(rst) (rst)(s[r*st])
+rule (rt)(st) (rst)s
+rule (rt)(r[s*t]) (rst)(r*st)
+rule ([r*s]t)(rst) (rst)(st)
+rule ([r*s]t)(r[s*t]) (rst)(s*t)
+rule ([r*s]t)(rt) (rst)t
+rule ([r*s]t)(rs) (rst)s
+rule t(rst) (rst)s
+rule (r*st)(rst) (rst)t
+rule r(rst) (rst)(r*st)
+rule (rs)(rst) (rst)(r[s*t])
+rule s(rst) (rst)r
+rule (r*s)(rst) (rst)(s*t)
+rule (s[r*st])(rs) (rst)r
+rule (s[r*st])(rst) (rst)(rt)
+rule (s[r*st])([r*s]t) (rst)t

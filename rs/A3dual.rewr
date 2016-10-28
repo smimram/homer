@@ -1,0 +1,17 @@
+order deglex
+gen r
+gen s
+gen t
+gen r*s
+gen s*t
+gen r*st
+rule s(r*s) rs
+rule (r*s)r rs
+rule (s*t)(r*st) r(s*t)
+rule (r*st)r r(s*t)
+rule t(s*t) st
+rule (s*t)s st
+rule t(r*st) (r*s)t
+rule (r*st)(r*s) (r*s)t
+rule tr rt
+rule (r*st)s s(r*st)
