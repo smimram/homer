@@ -83,6 +83,9 @@ js: $(CMOs) rewr_js.cmo
 	$(OCAMLC) -I `ocamlfind query js_of_ocaml` js_of_ocaml.cma $(CMAs) $(filter-out rewr.cmo,$(CMOs)) rewr_js.cmo -o rewr$(EXE)
 	js_of_ocaml rewr$(EXE)
 
+website: js
+	cp rewr.html rewr.js rewr.css ../docs/rewr/
+
 web: js
 	scp rewr.html lix:.webdir/rewr/index.html
 	scp rewr.js rewr.css lix:.webdir/rewr/

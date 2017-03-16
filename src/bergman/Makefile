@@ -15,8 +15,11 @@ test: all test.ml
 alg:
 	@$(MAKE) -C ../alg dcl INCDIRS=
 
-upload: all
-	scp index.html bergman.js bergman.css lix:.webdir/bergman
+website:
+	cp index.html bergman.js bergman.css ../../docs/bergman
+
+# upload: all
+	# scp index.html bergman.js bergman.css lix:.webdir/bergman
 
 include OCamlMakefile
 
