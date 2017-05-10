@@ -1,6 +1,6 @@
 all:
 
-update: rewr bergman ocamldoc
+update: rewr bergman alg
 
 rewr:
 	$(MAKE) -C ../src website
@@ -8,10 +8,10 @@ rewr:
 bergman:
 	$(MAKE) -C ../src/bergman website
 
-ocamldoc:
-	$(MAKE) -C ../src/alg htdoc
+alg:
+	$(MAKE) -C ../ocaml-alg/src htdoc
 	mkdir -p ocamldoc/alg
-	cp ../src/alg/doc/alg/html/* ocamldoc/alg/
+	cp ../ocaml-alg/src/doc/alg/html/* ocamldoc/alg/
 	-git add ocamldoc/alg/*.html
 
 ci: update

@@ -1,6 +1,6 @@
 SOURCES = ../stdlib.ml interface.ml bergman.ml
 RESULT = bergman
-INCDIRS = ../alg +../js_of_ocaml
+INCDIRS = ../../ocaml-alg/src +../js_of_ocaml
 LIBS = alg js_of_ocaml
 ANNOTATE = true
 USE_CAMLP4 = true
@@ -13,7 +13,7 @@ test: all test.ml
 	OCAMLRUNPARAM=b ./test
 
 alg:
-	@$(MAKE) -C ../alg dcl INCDIRS=
+	@$(MAKE) -C ../../ocaml-alg/src dcl INCDIRS=
 
 website:
 	cp index.html bergman.js bergman.css ../../docs/bergman
