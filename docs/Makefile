@@ -1,12 +1,9 @@
 all:
 
-update: rewr bergman alg
+update: rewr alg
 
 rewr:
 	$(MAKE) -C ../src website
-
-bergman:
-	$(MAKE) -C ../src/bergman website
 
 alg:
 	$(MAKE) -C ../ocaml-alg/src htdoc
@@ -18,4 +15,4 @@ ci: update
 	git ci . -m "Update website."
 	git push
 
-.PHONY: rewr bergman ocamldoc
+.PHONY: rewr ocamldoc
