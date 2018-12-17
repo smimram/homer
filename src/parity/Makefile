@@ -1,4 +1,4 @@
-SOURCES = ../stdlib.ml ../simpleMap.ml ../equiv.ml ../poset.ml ../graph.ml simpleSet.mli simpleSet.ml parity.ml generateParity.ml main.ml
+SOURCES = ../standard.ml ../simpleMap.ml ../equiv.ml ../poset.ml ../graph.ml simpleSet.mli simpleSet.ml parity.ml generateParity.ml main.ml
 RESULT = parity
 ANNOTATE = true
 DOC_FILES = $(SOURCES)

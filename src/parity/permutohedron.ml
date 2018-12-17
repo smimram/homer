@@ -1,4 +1,4 @@
-open Stdlib
+open Standard
 
 module G = FreeGroup
 

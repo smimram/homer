@@ -1,6 +1,6 @@
 (** Test dominos. *) 
 
-open Stdlib
+open Standard
 open FreeMonoid
 
 module IIMap = struct

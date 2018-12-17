@@ -1,6 +1,6 @@
 (** Sets. *)
 
-open Stdlib
+open Standard
 
 (** A set. *)
 type 'a t = 'a list

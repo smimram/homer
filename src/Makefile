@@ -7,7 +7,7 @@ YVES = $(wildcard monoid/yves/*.ml)
 SAM = $(wildcard monoid/sam/*.ml)
 
 # Files
-FILES := stdlib simpleMap equiv poset graph freeGroup lang matrix timeout \
+FILES := standard simpleMap equiv poset graph freeGroup lang matrix timeout \
          $(MONOID:.ml=) $(SAM:.ml=) $(YVES:.ml=) $(PARITY:.ml=) rewr
 BINS := rewr
 LIBS := unix

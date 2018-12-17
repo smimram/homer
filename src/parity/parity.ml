@@ -1,6 +1,6 @@
 (** Parity complexes. *)
 
-open Stdlib
+open Standard
 
 module Poset = Poset.Labeled
 

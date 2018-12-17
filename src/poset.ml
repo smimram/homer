@@ -1,6 +1,6 @@
 (** Partially ordered sets. *)
 
-open Stdlib
+open Standard
 
 type t = bool array array
 

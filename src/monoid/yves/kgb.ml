@@ -1,6 +1,6 @@
 (** KGB completion procedure **)
 
-open Stdlib
+open Standard
 open FreeMonoid
 
 (* Replacing a generator, eg if a rule x -> y exists with x & y generators. *)

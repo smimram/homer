@@ -1,6 +1,6 @@
 (** Part of the language which is specific to monoids. *)
 
-open Stdlib
+open Standard
 
 module M = FreeMonoid
 

@@ -1,6 +1,6 @@
 (** Completion test. *)
 
-open Stdlib
+open Standard
 open FreeMonoid
 
 let deligne rs =

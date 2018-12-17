@@ -1,6 +1,6 @@
 (** Free monoids. *)
 
-open Stdlib
+open Standard
 
 (** A letter in a signature. *)
 type letter = int
@@ -123,18 +123,19 @@ module Word = struct
        !ans
 
   let stripchars s cs =
+  let cs = Bytes.of_string cs in
   let len = String.length s in
-  let res = String.create len in
+  let res = Bytes.create len in
   let rec aux i j =
-    if i >= len then String.sub res 0 j
-    else if String.contains cs s.[i] then
+    if i >= len then Bytes.sub res 0 j
+    else if Bytes.contains cs s.[i] then
       aux (succ i) (j)
     else begin
-      res.[j] <- s.[i];
+      Bytes.set res j s.[i];
       aux (succ i) (succ j)
     end
   in
-  aux 0 0
+  Bytes.to_string (aux 0 0)
 
   let to_string_no_par rs w = 
     stripchars (to_string rs w) "()"

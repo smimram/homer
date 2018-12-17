@@ -1,6 +1,6 @@
 (** Test quasicentral elements. *)
 
-open Stdlib
+open Standard
 open FreeMonoid
 
 (** Éléments localement quasi-centraux - test **)

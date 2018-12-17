@@ -1,6 +1,6 @@
 (** General implementation of the language. *)
 
-open Stdlib
+open Standard
 
 let print_string = ref print_string
 let print s = !print_string s

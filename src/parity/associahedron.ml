@@ -1,6 +1,6 @@
 (** The associahedron. *)
 
-open Stdlib
+open Standard
 
 module G = FreeGroup
 

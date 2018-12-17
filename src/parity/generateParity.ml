@@ -1,6 +1,6 @@
 (** Generate signatures for common complexes. *)
 
-open Stdlib
+open Standard
 open Parity
 
 (** Generate the signature corresponding to the [n]-globe. *)

@@ -1,6 +1,6 @@
 (** Test homogenization of presentations. *)
 
-open Stdlib
+open Standard
 open FreeMonoid
 
 (* Homogenise *)

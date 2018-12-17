@@ -1,5 +1,5 @@
 (** Operations on matrices with integer coefficients. *)
-open Stdlib
+open Standard
 
 type t = int array array
 

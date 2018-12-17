@@ -1,6 +1,6 @@
 (** Anick resolution. *)
 
-open Stdlib
+open Standard
 open FreeMonoid
 
 module G = FreeGroup

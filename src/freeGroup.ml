@@ -1,6 +1,6 @@
 (** Free groups. *)
 
-open Stdlib
+open Standard
 
 (** Free group on a given list of generators. *)
 type 'a group = 'a list

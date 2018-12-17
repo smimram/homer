@@ -1,6 +1,6 @@
 (** Part of the language specific to parity complexes. *)
 
-open Stdlib
+open Standard
 open Parity
 
 (** Current signature. *)

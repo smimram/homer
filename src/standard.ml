@@ -35,12 +35,12 @@ let sort_pair (x,y) =
 let input_char ic =
   let c = Bytes.create 1 in
   if input ic c 0 1 = 0 then raise End_of_file;
-  c.[0]
+  Bytes.get c 0
 
 (* Inefficient implementation for js_of_ocaml. *)
 (* TODO: correctly handle last line *)
 let input_line ic =
-  let ans = ref "" in
+  let ans = ref (Bytes.create 0) in
   let c = ref (input_char ic) in
   try
     while !c <> '\n' do
@@ -53,7 +53,7 @@ let input_line ic =
     !ans
   with
   | End_of_file ->
-    if !ans <> "" then !ans else raise End_of_file
+    if Bytes.length !ans <> 0 then !ans else raise End_of_file
 
 (** Koszul sign rule *)
 let koszul n =

@@ -4,7 +4,7 @@ open FreeMonoid
 
 let artin_type_of_string t =
   try
-    let t = String.uppercase t in
+    let t = String.uppercase_ascii t in
     let n = int_of_string (String.sub t 1 (String.length t - 1)) in
     match t.[0] with
     | 'A' -> `A n
