@@ -15,8 +15,10 @@
 <link title="Algebra" rel="Chapter" href="Algebra.html">
 <link title="Alphabet" rel="Chapter" href="Alphabet.html">
 <link title="Automaton" rel="Chapter" href="Automaton.html">
+<link title="Category" rel="Chapter" href="Category.html">
 <link title="Field" rel="Chapter" href="Field.html">
 <link title="Globular" rel="Chapter" href="Globular.html">
+<link title="Graph" rel="Chapter" href="Graph.html">
 <link title="Group" rel="Chapter" href="Group.html">
 <link title="Matrix" rel="Chapter" href="Matrix.html">
 <link title="Module" rel="Chapter" href="Module.html">
@@ -31,7 +33,7 @@
 &nbsp;</div>
 <h1>Functor <a href="type_Automaton.Make.html">Automaton.Make</a></h1>
 
-<pre><span class="keyword">module</span> Make: <div class="sig_block"><code class="code">functor (</code><code class="code">X</code><code class="code"> : </code><code class="type"><a href="Alphabet.T.html">Alphabet.T</a></code><code class="code">) -&gt; </code><code class="code">sig</code> <a href="Automaton.Make.html">..</a> <code class="code">end</code></div></pre><table border="0" cellpadding="3" width="100%">
+<pre><span id="MODULEMake"><span class="keyword">module</span> Make</span>: <div class="sig_block"><code class="code">functor (</code><code class="code">X</code><code class="code"> : </code><code class="type"><a href="Alphabet.T.html">Alphabet.T</a></code><code class="code">) -&gt; </code><code class="code">sig</code> <a href="Automaton.Make.html">..</a> <code class="code">end</code></div></pre><table border="0" cellpadding="3" width="100%">
 <tr>
 <td align="left" valign="top" width="1%%"><b>Parameters: </b></td>
 <td>
@@ -47,9 +49,9 @@
 </table>
 <hr width="100%">
 
-<pre><span class="keyword">module</span> <a href="Automaton.Make.T.html">T</a>: <code class="type">Map.Make</code><code class="code">(</code><code class="type"><a href="Alphabet.Prod.html">Alphabet.Prod</a></code><code class="code">(</code><code class="type"><a href="Automaton.State.html">Automaton.State</a></code><code class="code">)</code><code class="code">(</code><code class="type">X</code><code class="code">)</code><code class="code">)</code></pre>
-<pre><span class="keyword">module</span> <a href="Automaton.Make.States.html">States</a>: <code class="type">Set.Make</code><code class="code">(</code><code class="type"><a href="Automaton.State.html">Automaton.State</a></code><code class="code">)</code></pre>
-<pre><span class="keyword">module</span> <a href="Automaton.Make.Regexp.html">Regexp</a>: <code class="type"><a href="Automaton.Regexp.html">Automaton.Regexp</a></code><code class="code">(</code><code class="type">X</code><code class="code">)</code></pre>
+<pre><span id="MODULEStates"><span class="keyword">module</span> <a href="Automaton.Make.States.html">States</a></span>: <code class="type"><a href="Alphabet.Pow.html">Alphabet.Pow</a></code><code class="code">(</code><code class="type"><a href="Automaton.State.html">Automaton.State</a></code><code class="code">)</code></pre>
+<pre><span id="MODULET"><span class="keyword">module</span> <a href="Automaton.Make.T.html">T</a></span>: <code class="type"><a href="Alphabet.Map.html">Alphabet.Map</a></code><code class="code">(</code><code class="type"><a href="Alphabet.Prod.html">Alphabet.Prod</a></code><code class="code">(</code><code class="type"><a href="Automaton.State.html">Automaton.State</a></code><code class="code">)</code><code class="code">(</code><code class="type">X</code><code class="code">)</code><code class="code">)</code><code class="code">(</code><code class="type"><a href="Automaton.Make.States.html">States</a></code><code class="code">)</code></pre>
+<pre><span id="MODULERegexp"><span class="keyword">module</span> <a href="Automaton.Make.Regexp.html">Regexp</a></span>: <code class="type"><a href="Automaton.Regexp.html">Automaton.Regexp</a></code><code class="code">(</code><code class="type">X</code><code class="code">)</code></pre>
 <pre><code><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> = {</code></pre><table class="typetable">
 <tr>
 <td align="left" valign="top" >
@@ -76,7 +78,7 @@
 <td align="left" valign="top" >
 <code>&nbsp;&nbsp;</code></td>
 <td align="left" valign="top" >
-<code><span id="TYPEELTt.transitions">transitions</span>&nbsp;: <code class="type">States.t T.t</code>;</code></td>
+<code><span id="TYPEELTt.transitions">transitions</span>&nbsp;: <code class="type">T.t</code>;</code></td>
 
 </tr></table>
 }
@@ -86,5 +88,5 @@
 <pre><span id="VALstates"><span class="keyword">val</span> states</span> : <code class="type"><a href="Automaton.Make.html#TYPEt">t</a> -> int</code></pre>
 <pre><span id="VALtrans"><span class="keyword">val</span> trans</span> : <code class="type"><a href="Automaton.Make.html#TYPEt">t</a> -> State.t -> X.t -> States.t</code></pre>
 <pre><span id="VALadd_transition"><span class="keyword">val</span> add_transition</span> : <code class="type"><a href="Automaton.Make.html#TYPEt">t</a> -> State.t -> X.t -> State.t -> <a href="Automaton.Make.html#TYPEt">t</a></code></pre>
-<pre><span id="VALcreate"><span class="keyword">val</span> create</span> : <code class="type">int -><br>       State.t -><br>       States.elt list -><br>       (State.t * X.t * State.t) list -> <a href="Automaton.Make.html#TYPEt">t</a></code></pre>
+<pre><span id="VALcreate"><span class="keyword">val</span> create</span> : <code class="type">int -><br>       State.t -><br>       States.S.elt list -><br>       (State.t * X.t * State.t) list -> <a href="Automaton.Make.html#TYPEt">t</a></code></pre>
 <pre><span id="VALkleene"><span class="keyword">val</span> kleene</span> : <code class="type"><a href="Automaton.Make.html#TYPEt">t</a> -> Regexp.t</code></pre></body></html>

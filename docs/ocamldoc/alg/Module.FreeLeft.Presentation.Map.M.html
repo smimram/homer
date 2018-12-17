@@ -15,8 +15,10 @@
 <link title="Algebra" rel="Chapter" href="Algebra.html">
 <link title="Alphabet" rel="Chapter" href="Alphabet.html">
 <link title="Automaton" rel="Chapter" href="Automaton.html">
+<link title="Category" rel="Chapter" href="Category.html">
 <link title="Field" rel="Chapter" href="Field.html">
 <link title="Globular" rel="Chapter" href="Globular.html">
+<link title="Graph" rel="Chapter" href="Graph.html">
 <link title="Group" rel="Chapter" href="Group.html">
 <link title="Matrix" rel="Chapter" href="Matrix.html">
 <link title="Module" rel="Chapter" href="Module.html">
@@ -31,7 +33,7 @@
 </div>
 <h1>Module <a href="type_Module.FreeLeft.Presentation.Map.M.html">Module.FreeLeft.Presentation.Map.M</a></h1>
 
-<pre><span class="keyword">module</span> M: <code class="type"><a href="Matrix.Make.html">Matrix.Make</a></code><code class="code">(</code><code class="type">R</code><code class="code">)</code></pre><hr width="100%">
+<pre><span id="MODULEM"><span class="keyword">module</span> M</span>: <code class="type"><a href="Matrix.Make.html">Matrix.Make</a></code><code class="code">(</code><code class="type">R</code><code class="code">)</code></pre><hr width="100%">
 
 <pre><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> = <code class="type">R.t array array</code> </pre>
 
@@ -45,23 +47,31 @@
 <pre><span id="VALcols"><span class="keyword">val</span> cols</span> : <code class="type"><a href="Matrix.Make.html#TYPEt">t</a> -> int</code></pre>
 <pre><span id="VALget"><span class="keyword">val</span> get</span> : <code class="type"><a href="Matrix.Make.html#TYPEt">t</a> -> int -> int -> R.t</code></pre>
 <pre><span id="VALto_string"><span class="keyword">val</span> to_string</span> : <code class="type"><a href="Matrix.Make.html#TYPEt">t</a> -> string</code></pre>
-<pre><span class="keyword">module</span> <a href="Matrix.Make.Row.html">Row</a>: <code class="code">sig</code> <a href="Matrix.Make.Row.html">..</a> <code class="code">end</code></pre><div class="info">
-Operations on rows.
+<pre><span id="MODULERow"><span class="keyword">module</span> <a href="Matrix.Make.Row.html">Row</a></span>: <code class="code">sig</code> <a href="Matrix.Make.Row.html">..</a> <code class="code">end</code></pre><div class="info">
+<p>Operations on rows.</p>
+
 </div>
 
 <pre><span id="VALrow_echelon"><span class="keyword">val</span> row_echelon</span> : <code class="type"><a href="Matrix.Make.html#TYPEt">t</a> -> <a href="Matrix.Make.html#TYPEt">t</a></code></pre><div class="info ">
-Put a matrix in row echelon form.<br>
+<div class="info-desc">
+<p>Put a matrix in row echelon form.</p>
+</div>
 </div>
 
 <pre><span id="VALrank"><span class="keyword">val</span> rank</span> : <code class="type"><a href="Matrix.Make.html#TYPEt">t</a> -> int</code></pre><div class="info ">
-Dimension of the image.<br>
+<div class="info-desc">
+<p>Dimension of the image.</p>
+</div>
 </div>
 
 <pre><span id="VALnullity"><span class="keyword">val</span> nullity</span> : <code class="type"><a href="Matrix.Make.html#TYPEt">t</a> -> int</code></pre><div class="info ">
-Dimension of the kernel.<br>
+<div class="info-desc">
+<p>Dimension of the kernel.</p>
+</div>
 </div>
 
-<pre><span class="keyword">module</span> <a href="Matrix.Make.Labeled.html">Labeled</a>: <div class="sig_block"><code class="code">functor (</code><code class="code">X</code><code class="code"> : </code><code class="type"><a href="Alphabet.T.html">Alphabet.T</a></code><code class="code">) -&gt; </code><code class="code">sig</code> <a href="Matrix.Make.Labeled.html">..</a> <code class="code">end</code></div></pre><div class="info">
-Matrices with labeled basis elements.
+<pre><span id="MODULELabeled"><span class="keyword">module</span> <a href="Matrix.Make.Labeled.html">Labeled</a></span>: <div class="sig_block"><code class="code">functor (</code><code class="code">X</code><code class="code"> : </code><code class="type"><a href="Alphabet.T.html">Alphabet.T</a></code><code class="code">) -&gt; </code><code class="code">sig</code> <a href="Matrix.Make.Labeled.html">..</a> <code class="code">end</code></div></pre><div class="info">
+<p>Matrices with labeled basis elements.</p>
+
 </div>
 </body></html>
