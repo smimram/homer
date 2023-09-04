@@ -2,6 +2,8 @@ Homer - Homotopy and rewriting
 ==============================
 The goal of **Homer** is to provide libraries and tools for higher-dimensional rewriting.
 
+**THIS PROJECT HAS BEEN SUPERSEEDED BY [OCAML-ALG](https://github.com/smimram/ocaml-alg) AND IS NOW ARCHIVED.**
+
 The main programming language is OCaml and most interfaces are done in HTML.
 
 It currently consists the following parts.
